@@ -1,0 +1,27 @@
+$font-64px: 64px;
+$font-32px: 32px;
+$font-24px: 24px;
+$font-20px: 20px;
+$font-18px: 18px;
+$font-16px: 16px;
+$font-14px: 14px;
+
+$fh-regular: 400;
+$fh-semi-bold: 600;
+$fh-bold: 700;
+
+$nav-bg-color: #313a46;
+
+$dashboard-bg-color: #fafbfe;
+$dashboard-font-color: #8391a2;
+$card-bg-color: #ffffff;
+$icon-bg-color: #6c757d;
+
+.logo-font {
+  font-size: $font-64px;
+  font-weight: $fh-bold;
+}
+
+.icon-color {
+  color: $icon-bg-color;
+}
