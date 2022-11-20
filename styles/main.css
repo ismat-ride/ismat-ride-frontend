@@ -1,0 +1,23 @@
+@media (max-width: 640px) {
+    h1, .nav-text {
+        font-size: 8px;
+    }
+
+    .dropdown-items{
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 640px) {
+    h1, .nav-text {
+        font-size: 12px;
+    }
+
+    .dropdown-items{
+        font-size: 8px;
+    }
+}
+
+.text-secondary{
+    color: #8391A2;
+}
