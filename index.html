@@ -10,57 +10,52 @@
     <title>Index</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none secondary">
-                        <span class="fs-5 d-none d-sm-inline">ISMAT RIDE</span>
+    <div class="d-flex flex-column bg-dark flex-shrink-0 p-3 d-flex justify-content-between w-25 vh-100">
+        <div>
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none">
+                <h1 class="fs-5 fw-semibold text-white">ISMAT<span class="text-primary">RIDE</span></h1>
+              </a>
+              <ul class="list-unstyled ps-0">
+                <li class="nav-item p-2">
+                    <a href="#" class="nav-link text-primary" aria-current="page">
+                      Home
                     </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-secondary">Rides</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-secondary">Ride Requests</span>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a data-bs-toggle="dropdown" class="text-secondary btn bg-dark align-middle" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">
-                                    <i></i>Dropdown
-                                </a>
-                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenu2">
-                                  <button class="dropdown-item text-secondary" type="button">Create Brand</button>
-                                  <button class="dropdown-item text-secondary" type="button">Create Model</button>
-                                  <button class="dropdown-item text-secondary" type="button">All Vehicles</button>
-                                </div>
-                              </div>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline  text-secondary">Logs</span>
-                            </a>
-                        </li>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#" class="nav-link text-secondary" aria-current="page">
+                      Rides
+                    </a>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#" class="nav-link text-secondary" aria-current="page">
+                      Ride Requests
+                    </a>
+                </li>
+                <li class="mb-1 p-2">
+                  <a class="text-secondary text-decoration-none" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Vehicles
+                  </a>
+                  <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="#" class="text-decoration-none rounded text-secondary">Create Brand</a></li>
+                      <li><a href="#" class="text-decoration-none rounded text-secondary">Create Model</a></li>
+                      <li><a href="#" class="text-decoration-none rounded text-secondary">All Vehicles</a></li>
                     </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" type="button" class="nav-link px-0"> <span class="d-none d-sm-inline">Settings</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col py-3">
-               STUFF HERE
-            </div>
+                  </div>
+                </li>
+                <li class="nav-item p-2">
+                    <a href="#" class="nav-link text-secondary" aria-current="page">
+                      Logs
+                    </a>
+                </li>
+              </ul>
+      
         </div>
-    </div>
+        <div>
+            <button class="d-flex link-dark btn btn-primary text-decoration-none btn-sm">
+                Account
+            </button>
+        </div>
+      </div>
 </body>
 </html>
