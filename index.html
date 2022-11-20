@@ -12,50 +12,57 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="d-flex flex-column bg-dark flex-shrink-0 p-3 d-flex justify-content-between w-25 vh-100">
-        <div>
-              <h1 class="fw-semibold text-white p-2">ISMAT<span class="text-primary">RIDE</span></h1>
-              <ul class="list-unstyled ps-0">
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link text-primary nav-text" aria-current="page">
-                        <i class="fa-solid fa-house"></i> Home
-                    </a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
-                        <i class="fa-solid fa-bicycle"></i> Rides
-                    </a>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
-                        <i class="fa-solid fa-paper-plane"></i> Ride Requests
-                    </a>
-                </li>
-                <li class="nav-item p-2 pt-0">
-                  <a class="text-secondary text-decoration-none nav-text" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                    <i class="fa-solid fa-car"></i> Vehicles
-                  </a>
-                  <div class="collapse" id="dashboard-collapse">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                      <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">Create Brand</a></li>
-                      <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">Create Model</a></li>
-                      <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">All Vehicles</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item p-2">
-                    <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
-                        <i class="fa-solid fa-file"></i> Logs
-                    </a>
-                </li>
-              </ul>
-      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex flex-column bg-dark flex-shrink-0 p-3 d-flex justify-content-between vh-100 col-4">
+                <div>
+                      <h1 class="fw-semibold text-white p-2">ISMAT<span class="text-primary">RIDE</span></h1>
+                      <ul class="list-unstyled ps-0">
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link text-primary nav-text" aria-current="page">
+                                <i class="fa-solid fa-house"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
+                                <i class="fa-solid fa-bicycle"></i> Rides
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
+                                <i class="fa-solid fa-paper-plane"></i> Ride Requests
+                            </a>
+                        </li>
+                        <li class="nav-item p-2 pt-0">
+                          <a class="text-secondary text-decoration-none nav-text" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            <i class="fa-solid fa-car"></i> Vehicles
+                          </a>
+                          <div class="collapse" id="dashboard-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                              <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">Create Brand</a></li>
+                              <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">Create Model</a></li>
+                              <li><a href="#" class="dropdown-items text-decoration-none rounded text-secondary nav-text">All Vehicles</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a href="#" class="nav-link text-secondary nav-text" aria-current="page">
+                                <i class="fa-solid fa-file"></i> Logs
+                            </a>
+                        </li>
+                      </ul>
+              
+                </div>
+                <div>
+                    <button class="nav-text w-100 text-white btn btn-primary text-decoration-none btn-sm">
+                        <i class="fa-solid fa-gear"></i> Settings
+                    </button>
+                </div>
+            </div>
+            <div class="col-8">
+                <h1>CONTENT</h1>
+              </div>
         </div>
-        <div>
-            <button class="nav-text w-100 text-white btn btn-primary text-decoration-none btn-sm">
-                <i class="fa-solid fa-gear"></i> Settings
-            </button>
-        </div>
-      </div>
+    </div>
 </body>
 </html>
