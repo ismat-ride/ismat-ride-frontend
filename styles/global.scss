@@ -11,6 +11,10 @@ $fh-semi-bold: 600;
 $fh-bold: 700;
 
 $nav-bg-color: #313a46;
+$primary-color: #0c727d;
+$primary-hover-color: #366065;
+$secondary-color: #7ac7cd;
+$text-color: #8391a2;
 
 $dashboard-bg-color: #fafbfe;
 $dashboard-font-color: #8391a2;
@@ -22,6 +26,30 @@ $icon-bg-color: #6c757d;
   font-weight: $fh-bold;
 }
 
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.primary-bg {
+  background-color: $primary-color;
+}
+
+.secondary-bg {
+  background-color: $secondary-color;
+}
+
 .icon-color {
   color: $icon-bg-color;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+}
+
+.btn-primary:hover {
+  background-color: $primary-hover-color !important;
 }
