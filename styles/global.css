@@ -3,6 +3,30 @@
   font-weight: 700;
 }
 
+.primary-color {
+  color: #0c727d;
+}
+
+.secondary-color {
+  color: #7ac7cd;
+}
+
+.primary-bg {
+  background-color: #0c727d;
+}
+
+.secondary-bg {
+  background-color: #7ac7cd;
+}
+
 .icon-color {
   color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #0c727d !important;
+}
+
+.btn-primary:hover {
+  background-color: #366065 !important;
 }/*# sourceMappingURL=global.css.map */
