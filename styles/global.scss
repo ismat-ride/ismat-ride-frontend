@@ -1,3 +1,5 @@
+$font-family: Roboto;
+
 $font-64px: 64px;
 $font-32px: 32px;
 $font-24px: 24px;
@@ -44,6 +46,10 @@ $icon-bg-color: #6c757d;
 
 .icon-color {
   color: $icon-bg-color;
+}
+
+.text-color{
+  color: $text-color;
 }
 
 .btn-primary {

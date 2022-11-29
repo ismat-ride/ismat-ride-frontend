@@ -30,3 +30,15 @@
 .btn-primary:hover {
   background-color: #366065 !important;
 }/*# sourceMappingURL=global.css.map */
+
+.text-color{
+  color: #8391A2 !important;
+}
+
+body{
+  font-family: Roboto !important;
+}
+
+.navigation-text{
+  font-size: 60px !important;
+}
