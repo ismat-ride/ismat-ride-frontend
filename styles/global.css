@@ -33,4 +33,12 @@
 
 .btn-primary:hover {
   background-color: #366065 !important;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.bg-color-dashboard {
+  background-color: #fafbfe;
 }/*# sourceMappingURL=global.css.map */
