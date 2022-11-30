@@ -23,6 +23,10 @@
   color: #6c757d;
 }
 
+.text-color {
+  color: #8391a2;
+}
+
 .btn-primary {
   background-color: #0c727d !important;
 }
@@ -30,15 +34,3 @@
 .btn-primary:hover {
   background-color: #366065 !important;
 }/*# sourceMappingURL=global.css.map */
-
-.text-color{
-  color: #8391A2 !important;
-}
-
-body{
-  font-family: Roboto !important;
-}
-
-.navigation-text{
-  font-size: 60px !important;
-}
