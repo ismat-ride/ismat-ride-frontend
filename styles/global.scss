@@ -95,6 +95,10 @@ $font-family: Roboto;
   font-size: $font-16px;
 }
 
+.font-14x{
+  font-size: $font-14px;
+}
+
 i {
   color: $icon-bg-color;
 }
@@ -111,6 +115,14 @@ li:hover > i {
   color: white;
 }
 
-li:hover > span {
+li:hover > a > span {
   color: white;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.logout{
+  color: $dashboard-bg-color;
 }

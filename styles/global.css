@@ -68,6 +68,10 @@
   font-size: 16px;
 }
 
+.font-14x {
+  font-size: 14px;
+}
+
 i {
   color: #6c757d;
 }
@@ -84,6 +88,14 @@ li:hover > i {
   color: white;
 }
 
-li:hover > span {
+li:hover > a > span {
   color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.logout {
+  color: #fafbfe;
 }/*# sourceMappingURL=global.css.map */

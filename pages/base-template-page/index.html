@@ -21,48 +21,84 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
     <script
       src="https://kit.fontawesome.com/86102a7658.js"
       crossorigin="anonymous"
     ></script>
     <title>Login Page</title>
   </head>
-  <body>
+  <body >
     <nav class="navbar navbar-expand navbar-light navbar-bg p-0">
-      <div class="sidebar-content shadow" style="width: 255px">
+      <div class="sidebar-content shadow js-simplebar" style="width: 255px">
         <h3 class="fw-bold p-3 text-center">
           <span class="primary-color"
             >ISMAT<span class="secondary-color">RIDE</span></span
           >
         </h3>
-
         <ul class="sidebar-nav">
-          <li class="sidebar-header p-3 d-flex align-items-center">
+          <li class="sidebar-header p-3 align-items-center">
             <i class="fa-solid fa-user fa-lg me-2"></i>
-            <span class="font-16px fw-bold text-color">Profile</span>
+            <a><span class="font-16px fw-bold text-color">Profile</span></a>
           </li>
-          <li class="sidebar-header p-3 d-flex align-items-center">
+          <li class="sidebar-header p-3  align-items-center">
             <i class="fa-solid fa-registered fa-lg me-2"></i>
-            <span class="font-16px fw-bold text-color">Rides</span>
+            <a data-bs-target="#rides" data-bs-toggle="collapse" aria-expanded="false"><span class="font-16px fw-bold text-color">Rides</span></a>
+            <div class="collapse-show">
+              <ul id="rides" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Search</span></a>
+                </li>
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Create</span></a>
+                </li>
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Mine</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="sidebar-header p-3 d-flex align-items-center">
-            <i class="fa-solid fa-paper-plane fa-lg me-2"></i>
-            <span class="font-16px fw-bold text-color">Ride Requests</span>
+          <li class="sidebar-header p-3  align-items-center">
+            <i class="fa-solid fa-registered fa-lg me-2"></i>
+            <a data-bs-target="#rideRequests" data-bs-toggle="collapse" aria-expanded="false"><span class="font-16px fw-bold text-color">Ride Request</span></a>
+            <div class="collapse-show">
+              <ul id="rideRequests" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">My requests</span></a>
+                </li>
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Requests to my Rides</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="sidebar-header p-3 d-flex align-items-center">
-            <i class="fa-solid fa-car fa-lg me-2"></i>
-            <span class="font-16px fw-bold text-color">Vehicles</span>
+          <li class="sidebar-header p-3 align-items-center">
+            <i class="fa-solid fa-registered fa-lg me-2"></i>
+            <a data-bs-target="#vehicles" data-bs-toggle="collapse" aria-expanded="false"><span class="font-16px fw-bold text-color">Vehicles</span></a>
+            <div class="collapse-show">
+              <ul id="vehicles" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Create</span></a>
+                </li>
+                <li class="sidebar-header align-items-center">
+                  <a class="text-decoration-none" href="#"><span class="font-14px fw-bold text-color">Mine</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
-
         <div>
-          <button
-            class="btn btn-primary w-100 position-sticky rounded-0 decoration-none"
-          >
-            Log Out
-          </button>
+          <div class="w-100 position-sticky mb-2 text-color decoration-none border-top border-bottom d-flex justify-content-center align-items-center pt-2 pb-2">
+            <i class="fa-solid fa-user fa-lg me-2"></i>
+            <span class="text-color">Dummy User</span>
+          </div>
+          <div class="btn btn-primary w-100 position-sticky rounded-0 decoration-none">
+            <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
+            <span>Log Out</span>
+          </div>
         </div>
       </div>
-    </nav>
+      <div class="main">
+      </div>
   </body>
 </html>
