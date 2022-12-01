@@ -51,7 +51,7 @@ $font-family: Roboto;
 }
 
 .text-color{
-  color: $text-color;
+  color: $text-color !important;
 }
 
 .btn-primary {

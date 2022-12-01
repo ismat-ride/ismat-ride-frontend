@@ -24,7 +24,7 @@
 }
 
 .text-color {
-  color: #8391a2;
+  color: #8391a2 !important;
 }
 
 .btn-primary {
