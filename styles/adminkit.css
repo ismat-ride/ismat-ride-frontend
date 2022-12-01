@@ -10722,11 +10722,6 @@ a.list-group-item {
   border-bottom: 0;
   box-shadow: 0 0 2rem 0 rgba(33, 37, 41, 0.1);
 }
-@media (max-width: 767.98px) {
-  .navbar {
-    width: 100vw;
-  }
-}
 .navbar .avatar {
   margin-top: -15px;
   margin-bottom: -15px;
