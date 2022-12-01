@@ -50,16 +50,18 @@ $font-family: Roboto;
   color: $icon-bg-color;
 }
 
-.text-color{
-  color: $text-color !important;
+.text-color {
+  color: $text-color;
 }
 
 .btn-primary {
   background-color: $primary-color !important;
+  border: none !important;
 }
 
 .btn-primary:hover {
   background-color: $primary-hover-color !important;
+  border: none !important;
 }
 
 .padding-top-10 {
@@ -70,17 +72,45 @@ $font-family: Roboto;
   background-color: $dashboard-bg-color;
 }
 
-.sidebar-link{
+.sidebar-link {
   background-color: $dashboard-bg-color !important;
 }
 
-.body{
+.body {
   font-weight: bold;
   font-family: $font-family !important;
 }
 
-.navigation-item{
+.navigation-item {
   text-decoration: none !important;
   padding: 0%;
   color: $text-color !important;
+}
+
+.font-20px {
+  font-size: $font-20px;
+}
+
+.font-16px {
+  font-size: $font-16px;
+}
+
+i {
+  color: $icon-bg-color;
+}
+
+li {
+  background-color: $primary-color;
+}
+
+li:hover {
+  background-color: $primary-hover-color;
+}
+
+li:hover > i {
+  color: white;
+}
+
+li:hover > span {
+  color: white;
 }

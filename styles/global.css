@@ -24,15 +24,17 @@
 }
 
 .text-color {
-  color: #8391a2 !important;
+  color: #8391a2;
 }
 
 .btn-primary {
   background-color: #0c727d !important;
+  border: none !important;
 }
 
 .btn-primary:hover {
   background-color: #366065 !important;
+  border: none !important;
 }
 
 .padding-top-10 {
@@ -56,4 +58,32 @@
   text-decoration: none !important;
   padding: 0%;
   color: #8391a2 !important;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+i {
+  color: #6c757d;
+}
+
+li {
+  background-color: #0c727d;
+}
+
+li:hover {
+  background-color: #366065;
+}
+
+li:hover > i {
+  color: white;
+}
+
+li:hover > span {
+  color: white;
 }/*# sourceMappingURL=global.css.map */
