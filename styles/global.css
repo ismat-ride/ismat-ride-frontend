@@ -41,4 +41,19 @@
 
 .bg-color-dashboard {
   background-color: #fafbfe;
+}
+
+.sidebar-link {
+  background-color: #fafbfe !important;
+}
+
+.body {
+  font-weight: bold;
+  font-family: Roboto !important;
+}
+
+.navigation-item {
+  text-decoration: none !important;
+  padding: 0%;
+  color: #8391a2 !important;
 }/*# sourceMappingURL=global.css.map */

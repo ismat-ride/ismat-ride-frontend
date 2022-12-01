@@ -14,35 +14,52 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/86102a7658.js" crossorigin="anonymous"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="../../styles/adminkit.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-color-dashboard">
   <div class="wrapper">
-    <nav id="sidebar" class="sidebar js-sidebar">
-  <div class="sidebar-content js-simplebar" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
-    <a class="sidebar-brand" href="index.html">
-      <span class="sidebar-brand-text align-middle">
-        ISMATRIDE
-      </span>
+  <nav id="sidebar" class="bg-dark">
+  <!-- <div class="sidebar-content" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;"> -->
+    <a class="mb-0 ms-4 mt-2" href="index.html">
+      <h1><span class="primary-color">ISMAT</span><span class="secondary-color">RIDE</span></h1>
     </a>
 
     <ul class="sidebar-nav">
-      <li class="sidebar-header">
-        Pages
+      <li class="m-4">
+        <a class="navigation-item">Profile</a>
       </li>
-      <li class="sidebar-item active">
-        <a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link collapsed">
-          <span class="align-middle">Dashboards</span>
+      <li class="m-4">
+        <a data-bs-target="#rides" data-bs-toggle="collapse" class="navigation-item collapsed">
+          Rides
         </a>
-        <ul id="dashboards" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" style="">
-          <li class="sidebar-item active"><a class="sidebar-link" href="index.html">Analytics</a></li>
-          <li class="sidebar-item"><a class="sidebar-link" href="dashboard-ecommerce.html">E-Commerce <span class="sidebar-badge badge bg-primary">Pro</span></a></li>
-          <li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto <span class="sidebar-badge badge bg-primary">Pro</span></a></li>
+        <ul id="rides" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+          <li><a class="navigation-item" href="#">Search</a></li>
+          <li><a class="navigation-item" href="#">Create</a></li>
+          <li><a class="navigation-item" href="#">Mine</a></li>
         </ul>
-      </li>				
-  </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1204px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 377px; transform: translate3d(0px, 34px, 0px); display: block;"></div></div></div>
+      </li>
+      <li class="m-4">
+        <a data-bs-target="#rideRequests" data-bs-toggle="collapse" class="navigation-item collapsed">
+          Ride Requests
+        </a>
+        <ul id="rideRequests" class="navigation-item sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+          <li><a class="navigation-item" href="#">My Requests</a></li>
+          <li><a class="navigation-item" href="#">Request to my rides</a></li>
+        </ul>
+      </li>		
+      <li class="m-4">
+        <a data-bs-target="#vehicles" data-bs-toggle="collapse" class="navigation-item collapsed">
+          <span class="align-middle text-color">Vehicles</span>
+        </a>
+        <ul id="vehicles" class="navigation-item sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+          <li><a class="navigation-item" href="#">Create</a></li>
+          <li><a class="navigation-item" href="#">Mine</a></li>
+        </ul>
+      </li>
 </nav>
   <div class="main">
     <main class="content">
