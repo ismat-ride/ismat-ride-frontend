@@ -1,3 +1,5 @@
+$font-family: Roboto;
+
 $font-64px: 64px;
 $font-32px: 32px;
 $font-24px: 24px;
@@ -20,6 +22,8 @@ $dashboard-bg-color: #fafbfe;
 $dashboard-font-color: #8391a2;
 $card-bg-color: #ffffff;
 $icon-bg-color: #6c757d;
+
+$font-family: Roboto;
 
 .logo-font {
   font-size: $font-64px;
@@ -46,10 +50,79 @@ $icon-bg-color: #6c757d;
   color: $icon-bg-color;
 }
 
+.text-color {
+  color: $text-color;
+}
+
 .btn-primary {
   background-color: $primary-color !important;
+  border: none !important;
 }
 
 .btn-primary:hover {
   background-color: $primary-hover-color !important;
+  border: none !important;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.bg-color-dashboard {
+  background-color: $dashboard-bg-color;
+}
+
+.sidebar-link {
+  background-color: $dashboard-bg-color !important;
+}
+
+.body {
+  font-weight: bold;
+  font-family: $font-family !important;
+}
+
+.navigation-item {
+  text-decoration: none !important;
+  padding: 0%;
+  color: $text-color !important;
+}
+
+.font-20px {
+  font-size: $font-20px;
+}
+
+.font-16px {
+  font-size: $font-16px;
+}
+
+.font-14x{
+  font-size: $font-14px;
+}
+
+i {
+  color: $icon-bg-color;
+}
+
+li {
+  background-color: $primary-color;
+}
+
+li:hover {
+  background-color: $primary-hover-color;
+}
+
+li:hover > i {
+  color: white;
+}
+
+li:hover > a > span {
+  color: white;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.logout{
+  color: $dashboard-bg-color;
 }
