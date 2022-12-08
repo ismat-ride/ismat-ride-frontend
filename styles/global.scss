@@ -1,6 +1,7 @@
 $font-family: Roboto;
 
 $font-64px: 64px;
+$font-36px: 36px;
 $font-32px: 32px;
 $font-24px: 24px;
 $font-20px: 20px;
@@ -64,6 +65,16 @@ $font-family: Roboto;
   border: none !important;
 }
 
+.btn-secondary {
+  background-color: $secondary-color !important;
+  border: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: $primary-hover-color !important;
+  border: none !important;
+}
+
 .padding-top-10 {
   padding-top: 10px;
 }
@@ -87,6 +98,14 @@ $font-family: Roboto;
   color: $text-color !important;
 }
 
+.font-36px {
+  font-size: $font-36px;
+}
+
+.font-32px {
+  font-size: $font-32px;
+}
+
 .font-20px {
   font-size: $font-20px;
 }
@@ -95,7 +114,7 @@ $font-family: Roboto;
   font-size: $font-16px;
 }
 
-.font-14x{
+.font-14x {
   font-size: $font-14px;
 }
 
@@ -119,10 +138,10 @@ li:hover > a > span {
   color: white;
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
-.logout{
+.logout {
   color: $dashboard-bg-color;
 }
