@@ -72,24 +72,14 @@
   font-size: 14px;
 }
 
-i {
-  color: #6c757d;
+.sidebar-link {
+  color: #8391a2 !important;
+  background-color: transparent !important;
 }
 
-li {
-  background-color: #0c727d;
-}
-
-li:hover {
-  background-color: #366065;
-}
-
-li:hover > i {
-  color: white;
-}
-
-li:hover > a > span {
-  color: white;
+.sidebar-link:hover {
+  color: white !important;
+  background-color: #366065 !important;
 }
 
 a {
@@ -100,28 +90,6 @@ a {
   color: #fafbfe;
 }
 
-.navbar-collapse.collapsing {
-  left: -75%;
-  transition: height 0s ease;
-}
-
-.navbar-collapse.show {
-  left: 0;
-  transition: left 150ms ease-in-out;
-}
-
-.navbar-toggler.collapsed ~ .navbar-collapse {
-  transition: left 300ms ease-in-out;
-}
-
-.navbar-collapse {
-  position: fixed;
-  left: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-
 .wrapper, .main {
-  background-color: #fafbfe !important;
+  background-color: #fafbfe;
 }/*# sourceMappingURL=global.css.map */

@@ -4,7 +4,7 @@
  * Copyright 2021 AdminKit
  * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
  */
-:root {
+ :root {
   --bs-blue: #3b7ddd;
   --bs-indigo: #0a0a0a;
   --bs-purple: #6f42c1;
@@ -10721,6 +10721,11 @@ a.list-group-item {
 .navbar {
   border-bottom: 0;
   box-shadow: 0 0 2rem 0 rgba(33, 37, 41, 0.1);
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    width: 100vw;
+  }
 }
 .navbar .avatar {
   margin-top: -15px;

@@ -99,24 +99,14 @@ $font-family: Roboto;
   font-size: $font-14px;
 }
 
-i {
-  color: $icon-bg-color;
+.sidebar-link {
+  color: $text-color !important;
+  background-color: transparent !important;
 }
 
-li {
-  background-color: $primary-color;
-}
-
-li:hover {
-  background-color: $primary-hover-color;
-}
-
-li:hover > i {
-  color: white;
-}
-
-li:hover > a > span {
-  color: white;
+.sidebar-link:hover {
+  color: white !important;
+  background-color: $primary-hover-color !important;
 }
 
 a{
@@ -125,28 +115,6 @@ a{
 
 .logout{
   color: $dashboard-bg-color;
-}
-
-.navbar-collapse.collapsing {
-  left: -75%;
-  transition: height 0s ease;
-}
-
-.navbar-collapse.show {
-  left: 0;
-  transition: left 150ms ease-in-out;
-}
-
-.navbar-toggler.collapsed~.navbar-collapse {
-  transition: left 300ms ease-in-out;
-}
-
-.navbar-collapse {
-  position: fixed;
-  left: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
 }
 
 .wrapper, .main{
