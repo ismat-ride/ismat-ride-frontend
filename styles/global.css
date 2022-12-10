@@ -37,6 +37,16 @@
   border: none !important;
 }
 
+.btn-secondary {
+  background-color: #7ac7cd !important;
+  border: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: #366065 !important;
+  border: none !important;
+}
+
 .padding-top-10 {
   padding-top: 10px;
 }
@@ -58,6 +68,14 @@
   text-decoration: none !important;
   padding: 0%;
   color: #8391a2 !important;
+}
+
+.font-36px {
+  font-size: 36px;
+}
+
+.font-32px {
+  font-size: 32px;
 }
 
 .font-20px {

@@ -1,6 +1,7 @@
 $font-family: Roboto;
 
 $font-64px: 64px;
+$font-36px: 36px;
 $font-32px: 32px;
 $font-24px: 24px;
 $font-20px: 20px;
@@ -64,6 +65,16 @@ $font-family: Roboto;
   border: none !important;
 }
 
+.btn-secondary {
+  background-color: $secondary-color !important;
+  border: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: $primary-hover-color !important;
+  border: none !important;
+}
+
 .padding-top-10 {
   padding-top: 10px;
 }
@@ -85,6 +96,14 @@ $font-family: Roboto;
   text-decoration: none !important;
   padding: 0%;
   color: $text-color !important;
+}
+
+.font-36px {
+  font-size: $font-36px;
+}
+
+.font-32px {
+  font-size: $font-32px;
 }
 
 .font-20px {
