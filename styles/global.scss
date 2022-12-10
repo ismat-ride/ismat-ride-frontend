@@ -32,7 +32,7 @@ $font-family: Roboto;
 }
 
 .primary-color {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 
 .secondary-color {
@@ -52,7 +52,7 @@ $font-family: Roboto;
 }
 
 .text-color {
-  color: $text-color;
+  color: $text-color !important;
 }
 
 .btn-primary {
@@ -68,6 +68,11 @@ $font-family: Roboto;
 .btn-secondary {
   background-color: $secondary-color !important;
   border: none !important;
+}
+
+.page-item.active .page-link {
+  background-color: $primary-color !important;
+  color: white !important;
 }
 
 .btn-secondary:hover {
@@ -116,6 +121,16 @@ $font-family: Roboto;
 
 .font-14x {
   font-size: $font-14px;
+}
+
+.sidebar-link {
+  color: $text-color !important;
+  background-color: transparent !important;
+}
+
+.sidebar-link:hover, .sidebar-link > i:hover {
+  color: white !important;
+  background-color: $primary-hover-color !important;
 }
 
 i {
@@ -221,4 +236,8 @@ a {
 .pagination-sm .page-item:last-child .page-link {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
+}
+
+.wrapper, .main{
+  background-color: $dashboard-bg-color;
 }
