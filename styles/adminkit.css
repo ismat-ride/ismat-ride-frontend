@@ -4,7 +4,7 @@
  * Copyright 2021 AdminKit
  * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
  */
- :root {
+:root {
   --bs-blue: #3b7ddd;
   --bs-indigo: #0a0a0a;
   --bs-purple: #6f42c1;
@@ -2365,7 +2365,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -10900,6 +10902,9 @@ a.sidebar-link svg {
 .sidebar-link:hover {
   background: #222e3c;
   border-left-color: transparent;
+}
+.sidebar-link:hover > * {
+  color: white !important;
 }
 .sidebar-link:hover,
 .sidebar-link:hover i,

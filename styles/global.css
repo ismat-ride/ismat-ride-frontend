@@ -100,7 +100,8 @@
   background-color: transparent !important;
 }
 
-.sidebar-link:hover, .sidebar-link > i:hover {
+.sidebar-link:hover,
+.sidebar-link > i:hover {
   color: white !important;
   background-color: #366065 !important;
 }
@@ -210,6 +211,7 @@ a {
   border-bottom-right-radius: 0.2rem;
 }
 
-.wrapper, .main {
+.wrapper,
+.main {
   background-color: #fafbfe;
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */

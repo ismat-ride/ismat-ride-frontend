@@ -128,7 +128,8 @@ $font-family: Roboto;
   background-color: transparent !important;
 }
 
-.sidebar-link:hover, .sidebar-link > i:hover {
+.sidebar-link:hover,
+.sidebar-link > i:hover {
   color: white !important;
   background-color: $primary-hover-color !important;
 }
@@ -238,6 +239,11 @@ a {
   border-bottom-right-radius: 0.2rem;
 }
 
-.wrapper, .main{
+.wrapper,
+.main {
   background-color: $dashboard-bg-color;
+}
+
+.sidebar-link > *:hover {
+  color: #ffffff;
 }
