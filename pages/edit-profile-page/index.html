@@ -1,233 +1,211 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Template</title>
     <link rel="stylesheet" href="../../styles/adminkit.css" />
     <link rel="stylesheet" href="../../styles/global.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
     <script
       src="https://kit.fontawesome.com/86102a7658.js"
       crossorigin="anonymous"
     ></script>
-    <title>Login Page</title>
+    <script src="../../js/app.js"></script>
   </head>
+
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-expand navbar-light navbar-bg p-0">
-        <div class="sidebar-content shadow js-simplebar" style="width: 255px">
-          <h3 class="fw-bold p-3 text-center">
-            <span class="primary-color"
+      <nav id="sidebar" class="sidebar shadow js-sidebar">
+        <div class="sidebar-content border-end border-black js-simplebar">
+          <h2 class="fw-bold p-3 text-center">
+            <span class="primary-color" style="cursor: pointer"
               >ISMAT<span class="secondary-color">RIDE</span></span
             >
-          </h3>
+          </h2>
           <ul class="sidebar-nav">
-            <li class="sidebar-header p-3 align-items-center">
-              <i class="fa-solid fa-user fa-lg me-2"></i>
-              <a><span class="font-16px fw-bold text-color">Profile</span></a>
+            <li class="sidebar-item">
+              <a class="sidebar-link">
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold"> PROFILE</span>
+              </a>
             </li>
-            <li class="sidebar-header p-3 align-items-center">
-              <i class="fa-solid fa-registered fa-lg me-2"></i>
+            <li class="sidebar-item">
               <a
+                class="sidebar-link"
                 data-bs-target="#rides"
                 data-bs-toggle="collapse"
-                aria-expanded="false"
-                ><span class="font-16px fw-bold text-color">Rides</span></a
               >
-              <div class="collapse-show">
-                <ul id="rides" class="sidebar-dropdown list-unstyled collapse">
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color"
-                        >Search</span
-                      ></a
-                    >
-                  </li>
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color"
-                        >Create</span
-                      ></a
-                    >
-                  </li>
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color">Mine</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">RIDES</span>
+              </a>
+              <ul
+                id="rides"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">SEARCH</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">CREATE</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">MINE</a>
+                </li>
+              </ul>
             </li>
-            <li class="sidebar-header p-3 align-items-center">
-              <i class="fa-solid fa-registered fa-lg me-2"></i>
+            <li class="sidebar-item">
               <a
-                data-bs-target="#rideRequests"
+                class="sidebar-link collapsed"
+                data-bs-target="#riderequests"
                 data-bs-toggle="collapse"
-                aria-expanded="false"
-                ><span class="font-16px fw-bold text-color"
-                  >Ride Request</span
-                ></a
               >
-              <div class="collapse-show">
-                <ul
-                  id="rideRequests"
-                  class="sidebar-dropdown list-unstyled collapse"
-                >
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color"
-                        >My requests</span
-                      ></a
-                    >
-                  </li>
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color"
-                        >Requests to my Rides</span
-                      ></a
-                    >
-                  </li>
-                </ul>
-              </div>
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">RIDE REQUESTS</span>
+              </a>
+              <ul
+                id="riderequests"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">MY REQUESTS</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">REQUESTS TO MY RIDES</a>
+                </li>
+              </ul>
             </li>
-            <li class="sidebar-header p-3 align-items-center">
-              <i class="fa-solid fa-registered fa-lg me-2"></i>
+            <li class="sidebar-item">
               <a
+                class="sidebar-link collapsed"
                 data-bs-target="#vehicles"
                 data-bs-toggle="collapse"
-                aria-expanded="false"
-                ><span class="font-16px fw-bold text-color">Vehicles</span></a
               >
-              <div class="collapse-show">
-                <ul
-                  id="vehicles"
-                  class="sidebar-dropdown list-unstyled collapse"
-                >
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color"
-                        >Create</span
-                      ></a
-                    >
-                  </li>
-                  <li class="sidebar-header align-items-center">
-                    <a class="text-decoration-none" href="#"
-                      ><span class="font-14px fw-bold text-color">Mine</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">VEHICLES</span>
+              </a>
+              <ul
+                id="vehicles"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">CREATE</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">MINE</a>
+                </li>
+              </ul>
             </li>
           </ul>
-          <div>
-            <div
-              class="w-100 position-sticky mb-2 text-color decoration-none border-top border-bottom d-flex justify-content-center align-items-center pt-2 pb-2"
-            >
+          <div class="border-top border-bottom border-black mb-2 p-2">
+            <div class="d-flex align-items-center justify-content-center">
               <i class="fa-solid fa-user fa-lg me-2"></i>
               <span class="text-color">Dummy User</span>
             </div>
-            <div
-              class="btn btn-primary w-100 position-sticky rounded-0 decoration-none"
-            >
+          </div>
+          <div class="row w-100 m-0">
+            <button class="btn btn-primary rounded-0 decoration-none p-2">
               <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-              <span>Log Out</span>
-            </div>
+              <span class="fw-bold">Log Out</span>
+            </button>
           </div>
         </div>
       </nav>
       <div class="main">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col p-4">
-              <h1 class="text-color fw-bold">PROFILE</h1>
-              <hr />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-              <div class="card shadow">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h2 class="text-center text-color fw-bold">
-                        EDIT PROFILE
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col mb-3">
-                      <label class="form-label text-color">First Name</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col mb-3">
-                      <label class="form-label text-color">Last Name</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col mb-3">
-                      <label class="form-label text-color">Phone Number</label>
-                      <div class="input-group">
-                        <span class="input-group-text"
-                          ><i class="fa-solid fa-phone icon-color"></i
-                        ></span>
-                        <input type="number" class="form-control" />
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+          <a class="sidebar-toggle js-sidebar-toggle">
+            <i class="hamburger align-self-center"></i>
+          </a>
+        </nav>
+        <main class="content">
+          <div class="container-fluid p-0">
+            <h1 class="text-color fw-bold">PROFILE</h1>
+            <hr />
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h2 class="text-center text-color fw-bold">
+                          EDIT PROFILE
+                        </h2>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col mb-3">
-                      <label class="form-label text-color">Email</label>
-                      <div class="input-group">
-                        <span class="input-group-text"
-                          ><i class="fa-solid fa-envelope icon-color"></i
-                        ></span>
-                        <input type="email" class="form-control" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col mb-3">
-                      <label class="form-label text-color"
-                        >Student Number</label
-                      >
-                      <div class="input-group">
-                        <span class="input-group-text"
-                          ><i class="fa-regular fa-credit-card icon-color"></i
-                        ></span>
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label class="form-label text-color">First Name</label>
                         <input type="text" class="form-control" />
                       </div>
                     </div>
-                  </div>
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                      <button type="submit" class="btn btn-secondary w-100">
-                        <span class="fw-bold">Cancel</span>
-                      </button>
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label class="form-label text-color">Last Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
                     </div>
-                    <div class="col">
-                      <button type="submit" class="btn btn-primary w-100">
-                        <span class="fw-bold"> Save Changes</span>
-                      </button>
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label class="form-label text-color"
+                          >Phone Number</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-phone icon-color"></i
+                          ></span>
+                          <input type="number" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label class="form-label text-color">Email</label>
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-envelope icon-color"></i
+                          ></span>
+                          <input type="email" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col mb-3">
+                        <label class="form-label text-color"
+                          >Student Number</label
+                        >
+                        <div class="input-group">
+                          <span class="input-group-text"
+                            ><i class="fa-regular fa-credit-card icon-color"></i
+                          ></span>
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col">
+                        <button type="submit" class="btn btn-secondary w-100">
+                          <span class="fw-bold">Cancel</span>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <button type="submit" class="btn btn-primary w-100">
+                          <span class="fw-bold"> Save Changes</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   </body>
