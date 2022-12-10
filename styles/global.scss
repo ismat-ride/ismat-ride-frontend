@@ -36,11 +36,11 @@ $font-family: Roboto;
 }
 
 .secondary-color {
-  color: $secondary-color;
+  color: $secondary-color !important;
 }
 
 .primary-bg {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
 }
 
 .secondary-bg {
@@ -244,6 +244,7 @@ a {
   background-color: $dashboard-bg-color;
 }
 
-.sidebar-link > *:hover {
-  color: #ffffff;
+button.form-control {
+  color: white !important;
+  background-color: $primary-color !important;
 }

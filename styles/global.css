@@ -8,11 +8,11 @@
 }
 
 .secondary-color {
-  color: #7ac7cd;
+  color: #7ac7cd !important;
 }
 
 .primary-bg {
-  background-color: #0c727d;
+  background-color: #0c727d !important;
 }
 
 .secondary-bg {
@@ -214,4 +214,9 @@ a {
 .wrapper,
 .main {
   background-color: #fafbfe;
-} /*# sourceMappingURL=global.css.map */
+}
+
+button.form-control {
+  color: white !important;
+  background-color: #0c727d !important;
+}/*# sourceMappingURL=global.css.map */
