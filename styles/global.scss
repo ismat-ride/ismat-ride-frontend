@@ -1,6 +1,7 @@
 $font-family: Roboto;
 
 $font-64px: 64px;
+$font-36px: 36px;
 $font-32px: 32px;
 $font-24px: 24px;
 $font-20px: 20px;
@@ -31,7 +32,7 @@ $font-family: Roboto;
 }
 
 .primary-color {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 
 .secondary-color {
@@ -51,7 +52,7 @@ $font-family: Roboto;
 }
 
 .text-color {
-  color: $text-color;
+  color: $text-color !important;
 }
 
 .btn-primary {
@@ -60,6 +61,21 @@ $font-family: Roboto;
 }
 
 .btn-primary:hover {
+  background-color: $primary-hover-color !important;
+  border: none !important;
+}
+
+.btn-secondary {
+  background-color: $secondary-color !important;
+  border: none !important;
+}
+
+.page-item.active .page-link {
+  background-color: $primary-color !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
   background-color: $primary-hover-color !important;
   border: none !important;
 }
@@ -87,6 +103,14 @@ $font-family: Roboto;
   color: $text-color !important;
 }
 
+.font-36px {
+  font-size: $font-36px;
+}
+
+.font-32px {
+  font-size: $font-32px;
+}
+
 .font-20px {
   font-size: $font-20px;
 }
@@ -95,7 +119,7 @@ $font-family: Roboto;
   font-size: $font-16px;
 }
 
-.font-14x{
+.font-14x {
   font-size: $font-14px;
 }
 
@@ -104,16 +128,16 @@ $font-family: Roboto;
   background-color: transparent !important;
 }
 
-.sidebar-link:hover {
+.sidebar-link:hover, .sidebar-link > i:hover {
   color: white !important;
   background-color: $primary-hover-color !important;
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
-.logout{
+.logout {
   color: $dashboard-bg-color;
 }
 
