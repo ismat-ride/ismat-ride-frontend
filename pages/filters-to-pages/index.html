@@ -12,26 +12,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../js/app.js"></script>
-    <style>
-      .profile-image{
-        width: 10%;
-      }
-      .info-box {
-        width: 100%;
-        height: 50%;
-        padding: 2%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 5px;
-        margin: 0;
-      }
-      .small-info-box {
-        width: 25%;
-        padding: 1%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 5px;
-        margin: 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -146,84 +126,47 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="text-color fw-bold">RIDES</h1>
+            <h1 class="text-color fw-bold">FILTERS</h1>
             <hr />
             <div class="row justify-content-center">
-              <div class="col-12 col-md-8 col-lg-6">
+              <div class="col">
                 <div class="card shadow">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <h2 class="text-center text-color fw-bold">
-                          DETAILS
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="container-fluid p-0">
+                    <div class="card-body">
                       <div class="row gx-5 my-3">
                         <div class="col">
                           <label class="form-label text-color">From</label>
-                          <input type="box" class="form-control" placeholder="Lagoa" disabled/>                            
+                          <div class="input-group"><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
+                            <span class="input-group-text"><i class="btn p-0 fa-regular fa-calendar icon-color"></i></span>
+                          </div>                            
+                        </div>
+                        <div class="col-1 text-center my-auto">                          
+                          <span ><i class="fa-regular fa-calendar icon-color"></i></span>                         
                         </div>
                         <div class="col">
                           <label class="form-label text-color">To</label>
-                          <input type="box" class="form-control" placeholder="Portimão" disabled/>
-                        </div>
-                      </div>
-                      <div class="row gx-5 my-3">
-                        <div class="col">
-                          <label class="form-label text-color">Vehicle</label>
-                          <input type="text" class="form-control" placeholder="Ferrari" disabled/>
+                          <div class="input-group"><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
+                            <span class="input-group-text"><i class="btn p-0 fa-regular fa-calendar icon-color"></i></span>
+                          </div>                            
                         </div>
                         <div class="col">
-                          <label class="form-label text-color">Date and Time</label>
-                          <input type="box" class="form-control" placeholder="25-12-2022, 18:30" disabled/>
+                          <label class="form-label text-color">Location</label>
+                          <input type="box" class="form-control" placeholder="Lagoa" />    
+                          <div class="form-check mt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"><span class="text-color">Return</span></label>
+                          </div>                  
+                        </div>
+                        <div class="col">
+                          <label for="customRange2" class="form-label">Example range</label>
+                          <input type="range" class="form-range" min="0" max="5" step="0.1" id="customRange2">                
                         </div>
                       </div>
-                      <div class="col-3">
-                        <div class="form-outline my-3">
-                          <label class="form-label text-color">Seats</label>
-                          <input type="number" id="form1" class="form-control form-icon-trailing" placeholder="3" disabled />
-                        </div>  
-                      </div>                                     
-                      </div>
-                        <div class="form-label text-color my-3">Passengers</div>
-                        <div class="card-body text-left">
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar1.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar2.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar3.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar4.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                  </div>
-                    <div class="row justify-content-between align-items-center my-5">
-                      <div class="col">
-                        <button type="submit" class="btn btn-secondary w-100">
-                          <span class="fw-bold">Back</span>
-                        </button>
-                      </div>
-                      <div class="col">
-                        <button type="submit" class="btn btn-primary w-100">
-                          <span class="fw-bold">Join</span>
-                        </button>
-                      </div>
-                    </div>
+                      <div class="col-1 offset-11">
+                          <button type="submit" class="btn btn-primary w-100">
+                            <span class="fw-bold">Apply</span>
+                          </button>
+                        </div>
+                      </div>                    
                   </div>
                 </div>
               </div>
