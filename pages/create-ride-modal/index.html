@@ -37,7 +37,7 @@
     </style>
     <title>Login Page</title>
   </head>
-  <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+  <body>
     <div class="wrapper">
       <nav id="sidebar" class="sidebar shadow js-sidebar">
         <div class="sidebar-content border-end border-black js-simplebar">
@@ -73,7 +73,7 @@
                   <a class="sidebar-link fw-bold" href="../ride-list-page/">PESQUISAR</a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CRIAR</a>
+                  <a class="sidebar-link fw-bold" data-bs-toggle="modal" data-bs-target="#createRideModal">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
                   <a class="sidebar-link fw-bold" href="../my-rides-page/">AS MINHAS BOLEIAS</a>
@@ -119,7 +119,7 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold" href="../create-vehicle/">CRIAR</a>
+                  <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
                   <a class="sidebar-link fw-bold">OS MEUS</a>
@@ -147,11 +147,11 @@
               <i class="hamburger align-self-center"></i>
           </a>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="createRideModal" tabindex="-1" aria-labelledby="createRideModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header m-2">
-              <h5 class="modal-title text-color" id="exampleModalLabel">CRIAR NOVA BOLEIA</h5>
+              <h5 class="modal-title text-color" id="createRideModal">CRIAR NOVA BOLEIA</h5>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
