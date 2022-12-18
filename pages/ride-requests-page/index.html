@@ -30,94 +30,108 @@
   </head>
   <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
     <div class="wrapper">
-		<nav id="sidebar" class="sidebar js-sidebar">
-			<div class="sidebar-content js-simplebar">
-                <h3 class="fw-bold p-3 text-center">
-                    <span class="primary-color"
-                      >ISMAT<span class="secondary-color">RIDE</span></span
-                    >
-                </h3>
-				<div class="sidebar-user">
-					<div class="d-flex justify-content-center">
-						<div class="flex-grow-1 ps-2">
-							<div class="dropdown-menu dropdown-menu-start">
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="settings"></i> Settings &
-									Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Log out</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<ul class="sidebar-nav">
-          <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
-                  <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
-                  <span class="font-16px fw-bold text-color">Profile</span>
+      <nav id="sidebar" class="sidebar shadow js-sidebar">
+        <div class="sidebar-content border-end border-black js-simplebar">
+          <h2 class="fw-bold p-3 text-center">
+            <span class="primary-color" style="cursor: pointer"
+              >ISMAT<span class="secondary-color">RIDE</span></span
+            >
+          </h2>
+          <ul class="sidebar-nav">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../edit-profile-page/">
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold"> PERFIL</span>
               </a>
-          </li> 
-					<li class="sidebar-item">
-						<a data-bs-target="#rides" data-bs-toggle="collapse" class="sidebar-link">
-							<i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
-              <span class="align-middle">Rides</span>
-						</a>
-						<ul id="rides" class="sidebar-dropdown list-unstyled collapse"  data-bs-parent="#sidebar">
-							<li class="sidebar-item">
-                <a class="sidebar-link" href="#">Search</a>
-              </li>
-							<li class="sidebar-item active">
-                <a class="sidebar-link" href="#">Create</a>
-              </li>
-							<li class="sidebar-item">
-                <a class="sidebar-link" href="#">Mine</a>
-              </li>
-						</ul>
-					</li> 
-					<li class="sidebar-item">
-						<a data-bs-target="#rideRequests" data-bs-toggle="collapse" class="sidebar-link">
-							<i class="fa-solid fa-paper-plane text-color"></i> 
-              <span class="align-middle">Ride Requests</span>
-						</a>
-						<ul id="rideRequests" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-							<li class="sidebar-item">
-                <a class="sidebar-link" href="#">My Requests</a>
-              </li>
-							<li class="sidebar-item active">
-                <a class="sidebar-link" href="#">Requests to my Rides</a>
-              </li>
-						</ul>
-					</li> 
-					<li class="sidebar-item">
-						<a data-bs-target="#vehicles" data-bs-toggle="collapse" class="sidebar-link">
-							<i class="fa-solid fa-car text-color"></i>
-              <span class="align-middle">Vehicles</span>
-						</a>
-						<ul id="vehicles" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-							<li class="sidebar-item">
-                <a class="sidebar-link" href="#">Create</a>
-              </li>
-							<li class="sidebar-item active">
-                <a class="sidebar-link" href="#">Mine</a>
-              </li>
-						</ul>
-					</li>
-				</ul>
-        <div>
-          <div class="w-100 position-sticky mb-2 text-color decoration-none border-top border-bottom d-flex justify-content-center align-items-center pt-2 pb-2">
-            <i class="fa-solid fa-user fa-lg me-2"></i>
-            <span class="text-color">Dummy User</span>
+            </li>
+            <li class="sidebar-item">
+              <a
+                class="sidebar-link"
+                data-bs-target="#rides"
+                data-bs-toggle="collapse"
+              >
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">BOLEIAS</span>
+              </a>
+              <ul
+                id="rides"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold" href="../ride-list-page/">PESQUISAR</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">CRIAR</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold" href="../my-rides-page/">AS MINHAS BOLEIAS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                class="sidebar-link collapsed"
+                data-bs-target="#riderequests"
+                data-bs-toggle="collapse"
+              >
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">PEDIDOS DE BOLEIA</span>
+              </a>
+              <ul
+                id="riderequests"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold" href="../my-ride-request-page/">OS MEUS PEDIDOS</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold" href="../ride-requests-page/">PEDIDOS PARA AS MINHAS BOLEIAS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                class="sidebar-link collapsed"
+                data-bs-target="#vehicles"
+                data-bs-toggle="collapse"
+              >
+                <i class="align-middle"></i>
+                <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
+                <span class="align-middle fw-bold">VEÍCULOS</span>
+              </a>
+              <ul
+                id="vehicles"
+                class="sidebar-dropdown list-unstyled collapse show"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold" href="../create-vehicle/">CRIAR</a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link fw-bold">OS MEUS</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="border-top border-bottom border-black mb-2 p-2">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-user fa-lg me-2"></i>
+              <span class="text-color">Dummy User</span>
+            </div>
           </div>
-          <div class="btn btn-primary w-100 position-sticky rounded-0 decoration-none">
-            <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-            <span>Log Out</span>
+          <div class="row w-100 m-0">
+            <button class="btn btn-primary rounded-0 decoration-none p-2">
+              <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
+              <span class="fw-bold">Log Out</span>
+            </button>
           </div>
         </div>
-    </div>
-		</nav>
+      </nav>
         <div class="main">
             <div class="p-4">
                 <a class="sidebar-toggle js-sidebar-toggle" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,7 +142,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col p-4">
-                  <h1 class="text-color fw-bold">REQUESTS TO MY RIDES</h2>
+                  <h1 class="text-color fw-bold">PEDIDOS PARA AS MINHAS BOLEIAS</h2>
                   <hr />
                 </div>
               </div>
@@ -165,7 +179,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-success font-14px ps-2 pe-2"
-                                    >ACCEPTED</span
+                                    >ACEITE</span
                                 >
                                 </div>
                             </div>
@@ -232,7 +246,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-success font-14px ps-2 pe-2"
-                                    >ACCEPTED</span
+                                    >ACEITE</span
                                 >
                                 </div>
                             </div>
@@ -254,12 +268,12 @@
                         <div class="d-flex p-0">
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-secondary w-75">
-                              <span class="fw-bold">Decline</span>
+                              <span class="fw-bold">Recusar</span>
                             </button>
                           </div>
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-primary w-75">
-                              <span class="fw-bold">Accept</span>
+                              <span class="fw-bold">Aceitar</span>
                             </button>
                           </div>
                         </div>
@@ -299,7 +313,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-danger font-14px ps-2 pe-2"
-                                    >DECLINED</span
+                                    >RECUSADO</span
                                 >
                                 </div>
                             </div>
@@ -321,12 +335,12 @@
                         <div class="d-flex p-0">
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-secondary w-75 disabled">
-                              <span class="fw-bold">Decline</span>
+                              <span class="fw-bold">Recusar</span>
                             </button>
                           </div>
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-primary w-75 disabled">
-                              <span class="fw-bold">Accept</span>
+                              <span class="fw-bold">Aceitar</span>
                             </button>
                           </div>
                         </div>
@@ -366,7 +380,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-danger font-14px ps-2 pe-2"
-                                    >DECLINED</span
+                                    >RECUSADO</span
                                 >
                                 </div>
                             </div>
@@ -388,12 +402,12 @@
                         <div class="d-flex p-0">
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-secondary w-75 disabled">
-                              <span class="fw-bold">Decline</span>
+                              <span class="fw-bold">Recusar</span>
                             </button>
                           </div>
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-primary w-75 disabled">
-                              <span class="fw-bold">Accept</span>
+                              <span class="fw-bold">Aceitar</span>
                             </button>
                           </div>
                         </div>
@@ -433,7 +447,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-warning font-14px ps-2 pe-2"
-                                    >PENDING</span
+                                    >PENDENTE</span
                                 >
                                 </div>
                             </div>
@@ -455,12 +469,12 @@
                         <div class="d-flex p-0">
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-secondary w-75 disabled">
-                              <span class="fw-bold">Decline</span>
+                              <span class="fw-bold">Recusar</span>
                             </button>
                           </div>
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-primary w-75 disabled">
-                              <span class="fw-bold">Accept</span>
+                              <span class="fw-bold">Aceitar</span>
                             </button>
                           </div>
                         </div>
@@ -500,7 +514,7 @@
                                 <div class="col">
                                 <span
                                     class="badge rounded-pill bg-warning font-14px ps-2 pe-2"
-                                    >PENDING</span
+                                    >PENDENTE</span
                                 >
                                 </div>
                             </div>
@@ -522,12 +536,12 @@
                         <div class="d-flex p-0">
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-secondary w-75 disabled">
-                              <span class="fw-bold">Decline</span>
+                              <span class="fw-bold">Recusar</span>
                             </button>
                           </div>
                           <div class="d-flex justify-content-evenly col-6 col-md-6 col-lg-6 mb-3">
                             <button class="btn btn-primary w-75 disabled">
-                              <span class="fw-bold">Accept</span>
+                              <span class="fw-bold">Aceitar</span>
                             </button>
                           </div>
                         </div>
@@ -542,11 +556,11 @@
                 >
                   <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                      <li class="page-item"><a class="page-link primary-color fw-bold" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link primary-color fw-bold" href="#">Anterior</a></li>
                       <li class="page-item active"><a class="page-link primary-color fw-bold" href="#">1</a></li>
                       <li class="page-item"><a class="page-link primary-color fw-bold" href="#">2</a></li>
                       <li class="page-item"><a class="page-link primary-color fw-bold" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link primary-color fw-bold" href="#">Next</a></li>
+                      <li class="page-item"><a class="page-link primary-color fw-bold" href="#">Seguinte</a></li>
                     </ul>
                   </nav>
                 </div>
