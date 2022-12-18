@@ -221,6 +221,32 @@ button.form-control {
   background-color: #0c727d !important;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+}
+
+.overlay > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3098039216);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -368,7 +394,8 @@ button.form-control {
   }
 }
 @media (min-width: 992px) {
-  .modal-lg, .modal-xl {
+  .modal-lg,
+  .modal-xl {
     max-width: 800px;
   }
 }
@@ -511,4 +538,4 @@ button.form-control {
   .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */
