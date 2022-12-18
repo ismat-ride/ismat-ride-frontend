@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ride Details</title>
+    <title>Base Template</title>
     <link rel="stylesheet" href="../../styles/adminkit.css" />
     <link rel="stylesheet" href="../../styles/global.css" />
     <script
@@ -12,26 +12,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../js/app.js"></script>
-    <style>
-      .profile-image{
-        width: 10%;
-      }
-      .info-box {
-        width: 100%;
-        height: 50%;
-        padding: 2%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 5px;
-        margin: 0;
-      }
-      .small-info-box {
-        width: 25%;
-        padding: 1%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 5px;
-        margin: 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -45,10 +25,10 @@
           </h2>
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-              <a class="sidebar-link">
+              <a class="sidebar-link" href="../edit-profile-page/">
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold"> PROFILE</span>
+                <span class="align-middle fw-bold"> PERFIL</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -59,7 +39,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDES</span>
+                <span class="align-middle fw-bold">BOLEIAS</span>
               </a>
               <ul
                 id="rides"
@@ -67,13 +47,17 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">SEARCH</a>
+                  <a class="sidebar-link fw-bold" href="../ride-list-page/"
+                    >PESQUISAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold" href="../my-rides-page/"
+                    >AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -85,7 +69,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDE REQUESTS</span>
+                <span class="align-middle fw-bold">PEDIDOS DE BOLEIA</span>
               </a>
               <ul
                 id="riderequests"
@@ -93,10 +77,16 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MY REQUESTS</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    href="../my-ride-request-page/"
+                    >OS MEUS PEDIDOS</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">REQUESTS TO MY RIDES</a>
+                  <a class="sidebar-link fw-bold" href="../ride-requests-page/"
+                    >PEDIDOS PARA AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -108,7 +98,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">VEHICLES</span>
+                <span class="align-middle fw-bold">VEÍCULOS</span>
               </a>
               <ul
                 id="vehicles"
@@ -116,10 +106,12 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold" href="../create-vehicle/"
+                    >CRIAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
                 </li>
               </ul>
             </li>
@@ -133,7 +125,7 @@
           <div class="row w-100 m-0">
             <button class="btn btn-primary rounded-0 decoration-none p-2">
               <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-              <span class="fw-bold">Log Out</span>
+              <span class="fw-bold">SAIR</span>
             </button>
           </div>
         </div>
@@ -146,85 +138,128 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="text-color fw-bold">RIDES</h1>
+            <h1 class="text-color fw-bold">BOLEIAS</h1>
             <hr />
             <div class="row justify-content-center">
-              <div class="col-12 col-md-8 col-lg-6">
+              <div class="col-12 col-md-12 col-lg-8">
                 <div class="card shadow">
                   <div class="card-body">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-12">
+                        <h2 class="text-center text-color fw-bold">DETAILS</h2>
+                      </div>
+                    </div>
                     <div class="row">
-                      <div class="col">
-                        <h2 class="text-center text-color fw-bold">
-                          DETAILS
-                        </h2>
+                      <div class="col-12 col-sm-6 mt-3">
+                        <label class="form-label text-color">De</label>
+                        <input
+                          type="box"
+                          class="form-control"
+                          placeholder="Lagoa"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6 mt-3">
+                        <label class="form-label text-color">Para</label>
+                        <input
+                          type="box"
+                          class="form-control"
+                          placeholder="Portimão"
+                          disabled
+                        />
                       </div>
                     </div>
-                    <div class="container-fluid p-0">
-                      <div class="row gx-5 my-3">
-                        <div class="col">
-                          <label class="form-label text-color">From</label>
-                          <input type="box" class="form-control" placeholder="Lagoa" disabled/>                            
-                        </div>
-                        <div class="col">
-                          <label class="form-label text-color">To</label>
-                          <input type="box" class="form-control" placeholder="Portimão" disabled/>
+                    <div class="row">
+                      <div class="col-12 col-sm-6 mt-3">
+                        <label class="form-label text-color">Veiculo</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ferrari"
+                          disabled
+                        />
+                      </div>
+                      <div class="col-12 col-sm-6 mt-3">
+                        <label class="form-label text-color">Data e Hora</label>
+                        <input
+                          type="box"
+                          class="form-control"
+                          placeholder="25-12-2022, 18:30"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 mt-3">
+                        <label class="form-label text-color">Lugares</label>
+                        <input
+                          type="number"
+                          id="form1"
+                          class="form-control form-icon-trailing"
+                          placeholder="3"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 mt-3">
+                        <label class="form-label text-color">Passageiros</label>
+                        <div class="d-flex align-items-center">
+                          <div class="row">
+                            <div class="col-12">
+                              <img
+                                class="img-account-profile rounded-circle"
+                                src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                                data-bs-toggle="dropdown"
+                                width="36px"
+                                height="36px"
+                              />
+                              <img
+                                class="img-account-profile rounded-circle"
+                                src="http://bootdey.com/img/Content/avatar/avatar2.png"
+                                data-bs-toggle="dropdown"
+                                width="36px"
+                                height="36px"
+                              />
+                              <img
+                                class="img-account-profile rounded-circle"
+                                src="http://bootdey.com/img/Content/avatar/avatar3.png"
+                                data-bs-toggle="dropdown"
+                                width="36px"
+                                height="36px"
+                              />
+                              <img
+                                class="img-account-profile rounded-circle"
+                                src="http://bootdey.com/img/Content/avatar/avatar4.png"
+                                data-bs-toggle="dropdown"
+                                width="36px"
+                                height="36px"
+                              />
+                              <img
+                                class="img-account-profile rounded-circle"
+                                src="http://bootdey.com/img/Content/avatar/avatar5.png"
+                                data-bs-toggle="dropdown"
+                                width="36px"
+                                height="36px"
+                              />
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="row gx-5 my-3">
-                        <div class="col">
-                          <label class="form-label text-color">Vehicle</label>
-                          <input type="text" class="form-control" placeholder="Ferrari" disabled/>
-                        </div>
-                        <div class="col">
-                          <label class="form-label text-color">Date and Time</label>
-                          <input type="box" class="form-control" placeholder="25-12-2022, 18:30" disabled/>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="form-outline my-3">
-                          <label class="form-label text-color">Seats</label>
-                          <input type="number" id="form1" class="form-control form-icon-trailing" placeholder="3" disabled />
-                        </div>  
-                      </div>                                     
-                      </div>
-                        <div class="form-label text-color my-3">Passengers</div>
-                        <div class="card-body text-left">
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar1.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar2.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar3.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          <img class="btn img-account-profile rounded-circle profile-image p-0" src="http://bootdey.com/img/Content/avatar/avatar4.png"  data-bs-toggle="dropdown">                        
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View Profile</a></li>                              
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div> 
                     </div>
                   </div>
-                    <div class="row justify-content-between align-items-center my-5">
-                      <div class="col">
-                        <button type="submit" class="btn btn-secondary w-100">
-                          <span class="fw-bold">Back</span>
-                        </button>
-                      </div>
-                      <div class="col">
-                        <button type="submit" class="btn btn-primary w-100">
-                          <span class="fw-bold">Join</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-sm-5 col-md-4 mt-2">
+                  <button type="submit" class="btn btn-secondary w-100">
+                    <span class="fw-bold">VOLTAR</span>
+                  </button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 mt-2">
+                  <button type="submit" class="btn btn-primary w-100">
+                    <span class="fw-bold">JUNTAR-ME</span>
+                  </button>
                 </div>
               </div>
             </div>
