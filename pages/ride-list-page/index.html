@@ -25,10 +25,10 @@
           </h2>
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-              <a class="sidebar-link">
+              <a class="sidebar-link" href="../edit-profile-page/">
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold"> PROFILE</span>
+                <span class="align-middle fw-bold"> PERFIL</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -39,7 +39,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDES</span>
+                <span class="align-middle fw-bold">BOLEIAS</span>
               </a>
               <ul
                 id="rides"
@@ -47,13 +47,17 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">SEARCH</a>
+                  <a class="sidebar-link fw-bold" href="../ride-list-page/"
+                    >PESQUISAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold" href="../my-rides-page/"
+                    >AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -65,7 +69,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDE REQUESTS</span>
+                <span class="align-middle fw-bold">PEDIDOS DE BOLEIA</span>
               </a>
               <ul
                 id="riderequests"
@@ -73,10 +77,16 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MY REQUESTS</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    href="../my-ride-request-page/"
+                    >OS MEUS PEDIDOS</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">REQUESTS TO MY RIDES</a>
+                  <a class="sidebar-link fw-bold" href="../ride-requests-page/"
+                    >PEDIDOS PARA AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -88,7 +98,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">VEHICLES</span>
+                <span class="align-middle fw-bold">VEÍCULOS</span>
               </a>
               <ul
                 id="vehicles"
@@ -96,10 +106,12 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold" href="../create-vehicle/"
+                    >CRIAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
                 </li>
               </ul>
             </li>
@@ -113,7 +125,7 @@
           <div class="row w-100 m-0">
             <button class="btn btn-primary rounded-0 decoration-none p-2">
               <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-              <span class="fw-bold">Log Out</span>
+              <span class="fw-bold">SAIR</span>
             </button>
           </div>
         </div>
@@ -126,7 +138,7 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="text-color fw-bold">RIDES</h1>
+            <h1 class="text-color fw-bold">BOLEIAS</h1>
             <hr />
             <div class="row justify-content-evenly">
               <div class="col-12 col-md-6 col-lg-6">
@@ -135,7 +147,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -163,7 +175,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -190,14 +202,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -210,7 +224,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -238,7 +252,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -265,14 +279,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -285,7 +301,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -313,7 +329,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -340,14 +356,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -360,7 +378,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -388,7 +406,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -415,14 +433,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -435,7 +455,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -463,7 +483,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -490,14 +510,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -510,7 +532,7 @@
                     <div
                       class="row align-items-end justify-content-start justify-content-md-center"
                     >
-                      <div class="col-12 col-sm-6 col-md-8">
+                      <div class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-8">
                         <div class="row align-items-center mb-2">
                           <div class="col">
                             <img
@@ -538,7 +560,7 @@
                           <div class="col">
                             <span
                               class="badge rounded-pill bg-primary font-14px ps-2 pe-2"
-                              >ACTIVE</span
+                              >ATIVO</span
                             >
                           </div>
                         </div>
@@ -565,14 +587,16 @@
                               >4</span
                             >
                             <span class="font-14px text-color"
-                              >2 MORE LEFT</span
+                              >2 LUGARES DISPONÍVEIS</span
                             >
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-sm-6 col-md-4 mt-2 d-flex">
+                      <div
+                        class="col-12 col-sm-4 col-md-12 col-lg-12 col-xl-4 mt-2 d-flex"
+                      >
                         <button class="btn btn-primary w-100">
-                          <span class="fw-bold">JOIN</span>
+                          <span class="fw-bold">JUNTAR-ME</span>
                         </button>
                       </div>
                     </div>
@@ -585,10 +609,10 @@
             >
               <ul class="pagination">
                 <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  <a class="page-link" href="#" tabindex="-1">Anterior</a>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active">
+                <li class="page-item ATIVO">
                   <a class="page-link" href="#"
                     >2 <span class="sr-only">(current)</span></a
                   >
@@ -598,7 +622,7 @@
                 <li class="page-item"><a class="page-link" href="#">5</a></li>
                 <li class="page-item"><a class="page-link" href="#">6</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
+                  <a class="page-link" href="#">Seguinte</a>
                 </li>
               </ul>
             </div>
