@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Vehicle</title>
+    <title>Base Template</title>
     <link rel="stylesheet" href="../../styles/adminkit.css" />
     <link rel="stylesheet" href="../../styles/global.css" />
     <script
@@ -12,30 +12,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../js/app.js"></script>
-    <style>
-      figure {
-      	width: 100%;
-      	height: 100%;
-      	margin: 0;
-      	padding: 0;
-      	background: #fff;
-      	overflow: hidden;
-      }
-      figure:hover+span {
-      	bottom: -36px;
-      	opacity: 1;
-      }
-
-      /* Opacity #1 */
-      .hover11 figure img {
-      	opacity: 1;
-      	-webkit-transition: .3s ease-in-out;
-      	transition: .3s ease-in-out;
-      }
-      .hover11 figure:hover img {
-      	opacity: .5;
-      }
-  </style>
   </head>
 
   <body>
@@ -49,10 +25,10 @@
           </h2>
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-              <a class="sidebar-link">
+              <a class="sidebar-link" href="../edit-profile-page/">
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold"> PROFILE</span>
+                <span class="align-middle fw-bold"> PERFIL</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -63,7 +39,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDES</span>
+                <span class="align-middle fw-bold">BOLEIAS</span>
               </a>
               <ul
                 id="rides"
@@ -71,13 +47,17 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">SEARCH</a>
+                  <a class="sidebar-link fw-bold" href="../ride-list-page/"
+                    >PESQUISAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold" href="../my-rides-page/"
+                    >AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -89,7 +69,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDE REQUESTS</span>
+                <span class="align-middle fw-bold">PEDIDOS DE BOLEIA</span>
               </a>
               <ul
                 id="riderequests"
@@ -97,10 +77,16 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MY REQUESTS</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    href="../my-ride-request-page/"
+                    >OS MEUS PEDIDOS</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">REQUESTS TO MY RIDES</a>
+                  <a class="sidebar-link fw-bold" href="../ride-requests-page/"
+                    >PEDIDOS PARA AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -112,7 +98,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">VEHICLES</span>
+                <span class="align-middle fw-bold">VEÍCULOS</span>
               </a>
               <ul
                 id="vehicles"
@@ -120,10 +106,12 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold" href="../create-vehicle/"
+                    >CRIAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
                 </li>
               </ul>
             </li>
@@ -137,7 +125,7 @@
           <div class="row w-100 m-0">
             <button class="btn btn-primary rounded-0 decoration-none p-2">
               <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-              <span class="fw-bold">Log Out</span>
+              <span class="fw-bold">SAIR</span>
             </button>
           </div>
         </div>
@@ -150,105 +138,172 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="text-color fw-bold">VEHICLE</h1>
+            <h1 class="text-color fw-bold">VEÍCULOS</h1>
             <hr />
             <div class="row justify-content-center">
-              <div class="col-12 col-md-8 col-lg-6">
+              <div class="col-12 col-md-12 col-lg-10">
                 <div class="card shadow">
                   <div class="card-body">
-                      <div class="row">
-                        <div class="col">
-                          <h2 class="text-center text-color fw-bold">
-                            EDIT
-                          </h2>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div
+                        class="row align-items-center justify-content-center"
+                      >
+                        <div class="col-12">
+                          <h2 class="text-center text-color fw-bold">EDITAR</h2>
                         </div>
                       </div>
-                      <div class="container-fluid p-0">                        
-                          <div class="p-0 d-flex justify-content-center">
-                            <div class="btn p-0 hover11 column">
-                              <figure>
-                                <img src="https://i.pinimg.com/550x/42/64/14/426414c97264657bebb33d11a0205c04.jpg" alt="Avatar" class="image profile-image img-thumbnail" style="height:100px;width:120px;" data-bs-toggle="dropdown">                    
-                                  <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Change image</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                  </ul>                                
-                              </figure> 
-                              <span>ola</span>
-                            </div>
-                          </div>
-
-
-
-                        
-                        
-                        <!--<div class="card-body text-center ">
-                          <img src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="img-responsive" class="profile-image img-thumbnail image-hover"> 
-                          <div class="middle">
-                            <div class="hover-text">John Doe</div>
-                          </div>                                                
-                        </div>-->                    
-                        <div class="row gx-5 my-3">
-                          <div class="col ">
-                            <label class="form-label text-color">Brand</label>
-                            <div class="input-group">
-                              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                              <input type="box" class="form-control" aria-label="Text input with dropdown button">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <label class="form-label text-color">Model</label>
-                            <div class="input-group">
-                              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                              <input type="box" class="form-control" aria-label="Text input with dropdown button">
+                      <div
+                        class="row align-items-center justify-content-center mt-2"
+                      >
+                        <div class="container">
+                          <div class="col-12 position-relative">
+                            <img
+                              src="https://i.pinimg.com/550x/42/64/14/426414c97264657bebb33d11a0205c04.jpg"
+                              class="img-thumbnail rounded"
+                              width="240"
+                              height="200"
+                              style="cursor: pointer"
+                            />
+                            <div class="overlay">
+                              <div
+                                class="d-flex justify-content-center align-items-center w-75"
+                              >
+                                <div class="row">
+                                  <div class="col-12">
+                                    <span
+                                      style="cursor: pointer"
+                                      class="text-center"
+                                      >MUDAR IMAGEM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="row gx-5">
-                          <div class="col">
-                            <label class="form-label text-color">Licence Plate</label>
-                            <input type="box" class="form-control" placeholder="XX-XX-XX" />
+                      </div>
+                      <div class="row justify-content-lg-around w-100 mt-2">
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Marca</label>
+                          <div class="input-group">
+                            <button
+                              class="btn btn-primary dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              SELECIONE
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                            <input
+                              type="box"
+                              class="form-control"
+                              aria-label="Text input with dropdown button"
+                              placeholder="Porche"
+                            />
                           </div>
-                          <div class="col">
-                            <label class="form-label text-color">Color</label>
-                            <input type="box" class="form-control" placeholder="Black"/>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Modelo</label>
+                          <div class="input-group">
+                            <button
+                              class="btn btn-primary dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              SELECIONE
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                            <input
+                              type="box"
+                              class="form-control"
+                              aria-label="Text input with dropdown button"
+                              placeholder="GT3RS"
+                            />
                           </div>
-                        </div>   
-                        <div class="col-3 my-3">                          
-                            <label class="form-label text-color">Seats</label>
-                            <input type="number" id="form1" class="form-control form-icon-trailing" placeholder="Select" />                           
-                        </div>                                 
+                        </div>
+                      </div>
+                      <div class="row justify-content-lg-around w-100 mt-2">
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Matricula</label>
+                          <input
+                            type="box"
+                            class="form-control"
+                            placeholder="XX-XX-XX"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Cor</label>
+                          <input
+                            type="box"
+                            class="form-control"
+                            placeholder="Preto"
+                          />
+                        </div>
+                      </div>
+                      <div class="row justify-content-md-start w-100 mt-2">
+                        <div class="col-12 col-lg-6">
+                          <label class="form-label text-color">Lugares</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Select"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                    <div class="row justify-content-between align-items-center my-5">
-                      <div class="col">
-                        <button type="submit" class="btn btn-secondary w-100">
-                          <span class="fw-bold">Cancel</span>
-                        </button>
-                      </div>
-                      <div class="col">
-                        <button type="submit" class="btn btn-primary w-100">
-                          <span class="fw-bold">Save Changes</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-sm-5 col-md-4 mt-2">
+                  <button type="submit" class="btn btn-secondary w-100">
+                    <span class="fw-bold">CANCELAR</span>
+                  </button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 mt-2">
+                  <button type="submit" class="btn btn-primary w-100">
+                    <span class="fw-bold">SALVAR ALTERAÇÕES</span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </main>
       </div>
-    </div>    
+    </div>
   </body>
 </html>
