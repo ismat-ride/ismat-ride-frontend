@@ -10911,23 +10911,7 @@ a.sidebar-link svg {
 .sidebar-link:hover svg {
   color: rgba(233, 236, 239, 0.75);
 }
-.sidebar-item.active .sidebar-link:hover,
-.sidebar-item.active > .sidebar-link {
-  color: #e9ecef;
-  background: linear-gradient(
-    90deg,
-    rgba(59, 125, 221, 0.1),
-    rgba(59, 125, 221, 0.0875) 50%,
-    transparent
-  );
-  border-left-color: #3b7ddd;
-}
-.sidebar-item.active .sidebar-link:hover i,
-.sidebar-item.active .sidebar-link:hover svg,
-.sidebar-item.active > .sidebar-link i,
-.sidebar-item.active > .sidebar-link svg {
-  color: #e9ecef;
-}
+
 .sidebar-dropdown .sidebar-link {
   padding: 0.625rem 1.5rem 0.625rem 3.25rem;
   font-weight: 400;
@@ -12213,4 +12197,15 @@ span.flatpickr-weekday {
 .flatpickr-calendar.inline .flatpickr-prev-month:hover {
   background: #e6e6e6;
   color: #000;
+}
+.isSelected {
+  background-color: #366065 !important;
+}
+
+.isSelected > a {
+  color: white !important;
+}
+
+.isSelected > a > i {
+  color: white !important;
 }

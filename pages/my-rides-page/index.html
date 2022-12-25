@@ -52,9 +52,15 @@
                   >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#createRideModal">CRIAR</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#createRideModal"
+                    >CRIAR</a
+                  >
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item isSelected">
                   <a class="sidebar-link fw-bold" href="../my-rides-page/"
                     >AS MINHAS BOLEIAS</a
                   >
@@ -106,12 +112,18 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold"
+                  <a
+                    class="sidebar-link fw-bold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#createVehicleModal"
                     >CRIAR</a
                   >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
+                  <a href="../vehicles-page/" class="sidebar-link fw-bold"
+                    >OS MEUS VEÍCULOS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -140,6 +152,38 @@
           <div class="container-fluid p-0">
             <h1 class="text-color fw-bold">AS MINHAS BOLEIAS</h1>
             <hr />
+            <div class="card mb-3">
+              <div class="card-body">
+                <div
+                  class="d-flex flex-row flex-wrap gap-4 justify-content-center justify-content-sm-start"
+                >
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Origem</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Destino</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Hora Partida</label>
+                    <input type="datetime-local" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color"
+                      >Lugares Disponiveis</label
+                    >
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Estado</label>
+                    <select class="form-select">
+                      <option selected>Disponivel</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="card shadow">
@@ -359,53 +403,55 @@
                               class="badge rounded-pill bg-danger font-14px ps-2 pe-2"
                               >TERMINOU</span
                             >
-                        </div>
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <span class="font-16px fw-bold text-color"
-                              >10/10/2022</span
-                            >
                           </div>
-                        </div>
-                        <div class="row align-items-center mb-3">
-                          <div class="col">
-                            <span class="font-16px fw-bold text-color"
-                              >10:10 PM</span
-                            >
+                          <div class="row align-items-center">
+                            <div class="col">
+                              <span class="font-16px fw-bold text-color"
+                                >10/10/2022</span
+                              >
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="row align-items-center justify-content-evenly mb-3"
-                        >
-                          <div>
-                            <i class="fa-solid fa-user-group me-2"></i>
-                            <span class="fw-bold font-14px text-color me-3"
-                              >4</span
-                            >
-                            <span class="font-14px text-color"
-                              >2 LUGARES DISPONÍVEIS</span
-                            >
+                          <div class="row align-items-center mb-3">
+                            <div class="col">
+                              <span class="font-16px fw-bold text-color"
+                                >10:10 PM</span
+                              >
+                            </div>
+                          </div>
+                          <div
+                            class="row align-items-center justify-content-evenly mb-3"
+                          >
+                            <div>
+                              <i class="fa-solid fa-user-group me-2"></i>
+                              <span class="fw-bold font-14px text-color me-3"
+                                >4</span
+                              >
+                              <span class="font-14px text-color"
+                                >2 LUGARES DISPONÍVEIS</span
+                              >
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="row justify-content-evenly align-items-center">
-                      <div class="col-6">
-                        <button class="btn btn-secondary w-100">
-                          <span class="fw-bold">EDITAR</span>
-                        </button>
-                      </div>
-                      <div class="col-6">
-                        <button class="btn btn-primary w-100">
-                          <span class="fw-bold">CANCELAR</span>
-                        </button>
+                      <div
+                        class="row justify-content-evenly align-items-center"
+                      >
+                        <div class="col-6">
+                          <button class="btn btn-secondary w-100">
+                            <span class="fw-bold">EDITAR</span>
+                          </button>
+                        </div>
+                        <div class="col-6">
+                          <button class="btn btn-primary w-100">
+                            <span class="fw-bold">CANCELAR</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-             <div class="col-12 col-md-6 col-lg-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <div class="card shadow">
                   <div class="card-body">
                     <div class="row">
@@ -537,98 +583,312 @@
                   </div>
                 </div>
               </div>
-            <div class="row">
-              <div
-                class="d-flex align-items-center justify-content-center justify-content-md-end"
-              >
-                <ul class="pagination">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item ATIVO">
-                    <a class="page-link" href="#"
-                      >2 <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Seguinte</a>
-                  </li>
-                </ul>
+              <div class="row">
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-md-end"
+                >
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item ATIVO">
+                      <a class="page-link" href="#"
+                        >2 <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">6</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Seguinte</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </main>
       </div>
     </div>
-    <div class="modal fade" id="createRideModal" tabindex="-1" aria-labelledby="createRideModal" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="createRideModal"
+      tabindex="-1"
+      aria-labelledby="createRideModal"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header m-2">
-            <h5 class="modal-title text-color" id="createRideModal">CRIAR NOVA BOLEIA</h5>
+            <h5 class="modal-title text-color" id="createRideModal">
+              CRIAR NOVA BOLEIA
+            </h5>
           </div>
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                  <div class="col-6">
-                      <div class="input-group mb-3">
-                          <label class="input-group-text" for="inputGroupSelect01">Desde</label>
-                          <select class="form-select" id="inputGroupSelect01">
-                              <option selected>Portimão</option>
-                              <option value="Lagoa">Lagoa</option>
-                              <option value="Albufeira">Albufeira</option>
-                              <option value="Faro">Faro</option>
-                          </select>
-                      </div>
+                <div class="col-6">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Desde</label
+                    >
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Portimão</option>
+                      <option value="Lagoa">Lagoa</option>
+                      <option value="Albufeira">Albufeira</option>
+                      <option value="Faro">Faro</option>
+                    </select>
                   </div>
-                  <div class="col-6">
-                      <div class="input-group mb-3">
-                          <label class="input-group-text" for="inputGroupSelect01">Até</label>
-                          <select class="form-select" id="inputGroupSelect01">
-                              <option selected>Ferrari</option>
-                              <option value="Lagoa">Porsche</option>
-                              <option value="Albufeira">Lada</option>
-                          </select>
-                      </div>
+                </div>
+                <div class="col-6">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Até</label
+                    >
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Ferrari</option>
+                      <option value="Lagoa">Porsche</option>
+                      <option value="Albufeira">Lada</option>
+                    </select>
                   </div>
+                </div>
               </div>
               <div class="row">
-                  <div class="col-6">
-                      <div class="input-group mb-3">
-                          <label class="input-group-text" for="inputGroupSelect01">Veículo</label>
-                          <select class="form-select" id="inputGroupSelect01">
-                              <option selected>Portimão</option>
-                              <option value="Lagoa">Lagoa</option>
-                              <option value="Albufeira">Albufeira</option>
-                              <option value="Faro">Faro</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                    <input type="datetime-local" class="form-control">
-                  </div>
-              <div class="row mb-5">
                 <div class="col-6">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Veículo</label
+                    >
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Portimão</option>
+                      <option value="Lagoa">Lagoa</option>
+                      <option value="Albufeira">Albufeira</option>
+                      <option value="Faro">Faro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <input type="datetime-local" class="form-control" />
+                </div>
+                <div class="row mb-5">
+                  <div class="col-6">
                     <label class="form-label" for="typeNumber">Lugares</label>
                     <input type="number" id="typeNumber" class="form-control" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row justify-content-between align-items-center">
-            <div class="col">
-              <button type="submit" class="btn btn-secondary w-100" data-bs-dismiss="modal">
-                <span class="fw-bold">Cancelar</span>
-              </button>
+            <div class="row justify-content-between align-items-center">
+              <div class="col">
+                <button
+                  type="submit"
+                  class="btn btn-secondary w-100"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="fw-bold">Cancelar</span>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="fw-bold"> Guardar Alterações</span>
+                </button>
+              </div>
             </div>
-            <div class="col">
-              <button type="submit" class="btn btn-primary w-100" data-bs-dismiss="modal">
-                <span class="fw-bold"> Guardar Alterações</span>
-              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="createVehicleModal"
+      tabindex="-1"
+      aria-labelledby="createVehicleModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header m-2">
+            <h5 class="modal-title text-color" id="createVehicleModal">
+              CRIAR NOVO VEÍCULO
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-12 col-lg-10">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div
+                        class="row align-items-center justify-content-center"
+                      >
+                        <div class="col-12"></div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-center mt-2"
+                      >
+                        <div class="container">
+                          <div class="col-12 position-relative">
+                            <img
+                              src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/car-512.png"
+                              class="img-thumbnail rounded"
+                              width="240"
+                              height="200"
+                              style="cursor: pointer; opacity: 15%"
+                            />
+                            <div class="overlay">
+                              <div
+                                class="d-flex justify-content-center align-items-center w-75"
+                              >
+                                <div class="row">
+                                  <div class="col-12">
+                                    <span
+                                      style="cursor: pointer"
+                                      class="text-center"
+                                      >ADICIONAR IMAGEM</span
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-lg-around w-100 mt-2">
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Marca</label>
+                          <div class="input-group">
+                            <button
+                              class="btn btn-primary dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              SELECIONE
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                            <input
+                              type="box"
+                              class="form-control"
+                              aria-label="Text input with dropdown button"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Modelo</label>
+                          <div class="input-group">
+                            <button
+                              class="btn btn-primary dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              SELECIONE
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                            <input
+                              type="box"
+                              class="form-control"
+                              aria-label="Text input with dropdown button"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-lg-around w-100 mt-2">
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Matricula</label>
+                          <input
+                            type="box"
+                            class="form-control"
+                            placeholder="XX-XX-XX"
+                          />
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                          <label class="form-label text-color">Cor</label>
+                          <input type="box" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="row justify-content-md-start w-100 mt-2">
+                        <div class="col-12 col-lg-6">
+                          <label class="form-label text-color">Lugares</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Select"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+              <div class="col">
+                <button
+                  type="submit"
+                  class="btn btn-secondary w-100"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="fw-bold">Cancelar</span>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="fw-bold"> Guardar Alterações</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
