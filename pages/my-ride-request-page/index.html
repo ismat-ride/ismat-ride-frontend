@@ -76,7 +76,7 @@
                 class="sidebar-dropdown list-unstyled collapse show"
                 data-bs-parent="#sidebar"
               >
-                <li class="sidebar-item">
+                <li class="sidebar-item isSelected">
                   <a
                     class="sidebar-link fw-bold"
                     href="../my-ride-request-page/"
@@ -111,7 +111,7 @@
                   >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
+                  <a  href="../vehicles-page/" class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
                 </li>
               </ul>
             </li>
@@ -140,6 +140,33 @@
           <div class="container-fluid p-0">
             <h1 class="text-color fw-bold">OS MEUS PEDIDOS</h1>
             <hr />
+             <div class="card mb-3">
+              <div class="card-body">
+                <div
+                  class="d-flex flex-row flex-wrap gap-4 justify-content-center justify-content-sm-start"
+                >
+                
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Origem</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Destino</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Hora Partida</label>
+                    <input type="datetime-local" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Estado</label>
+                    <select class="form-select">
+                      <option selected>Disponivel</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row justify-content-evenly">
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="card shadow">

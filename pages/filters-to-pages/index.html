@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ride Details</title>
+    <title>Base Template</title>
     <link rel="stylesheet" href="../../styles/adminkit.css" />
     <link rel="stylesheet" href="../../styles/global.css" />
     <script
@@ -25,10 +25,10 @@
           </h2>
           <ul class="sidebar-nav">
             <li class="sidebar-item">
-              <a class="sidebar-link">
+              <a class="sidebar-link" href="../edit-profile-page/">
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-user fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold"> PROFILE</span>
+                <span class="align-middle fw-bold"> PERFIL</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -39,7 +39,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-registered fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDES</span>
+                <span class="align-middle fw-bold">BOLEIAS</span>
               </a>
               <ul
                 id="rides"
@@ -47,13 +47,23 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">SEARCH</a>
+                  <a class="sidebar-link fw-bold" href="../ride-list-page/"
+                    >PESQUISAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#createRideModal"
+                    >CRIAR</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a class="sidebar-link fw-bold" href="../my-rides-page/"
+                    >AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -65,7 +75,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-paper-plane fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">RIDE REQUESTS</span>
+                <span class="align-middle fw-bold">PEDIDOS DE BOLEIA</span>
               </a>
               <ul
                 id="riderequests"
@@ -73,10 +83,16 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MY REQUESTS</a>
+                  <a
+                    class="sidebar-link fw-bold"
+                    href="../my-ride-request-page/"
+                    >OS MEUS PEDIDOS</a
+                  >
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">REQUESTS TO MY RIDES</a>
+                  <a class="sidebar-link fw-bold" href="../ride-requests-page/"
+                    >PEDIDOS PARA AS MINHAS BOLEIAS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -88,7 +104,7 @@
               >
                 <i class="align-middle"></i>
                 <i class="fa-solid fa-car fa-lg me-2 text-color"></i>
-                <span class="align-middle fw-bold">VEHICLES</span>
+                <span class="align-middle fw-bold">VEÍCULOS</span>
               </a>
               <ul
                 id="vehicles"
@@ -96,10 +112,12 @@
                 data-bs-parent="#sidebar"
               >
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">CREATE</a>
+                  <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
                 <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">MINE</a>
+                  <a href="../vehicles-page/" class="sidebar-link fw-bold"
+                    >OS MEUS VEÍCULOS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -113,7 +131,7 @@
           <div class="row w-100 m-0">
             <button class="btn btn-primary rounded-0 decoration-none p-2">
               <i class="fa-solid fa-right-from-bracket fa-lg me-2 logout"></i>
-              <span class="fw-bold">Log Out</span>
+              <span class="fw-bold">SAIR</span>
             </button>
           </div>
         </div>
@@ -126,56 +144,144 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="text-color fw-bold">FILTERS</h1>
-            <hr />
-            <div class="row justify-content-center">
-              <div class="col">
-                <div class="card shadow">
-                    <div class="card-body">
-                      <div class="row my-3 d-flex justify-content-between ">
-                        <div class="col-12 col-sm-8 col-md-2 ">
-                          <label class="form-label text-color">From</label>
-                          <div class="input-group"><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
-                            <span class="input-group-text"><i class="btn p-0 fa-regular fa-calendar icon-color"></i></span>
-                          </div>                            
-                        </div>
-                        <div class="col-12 col-sm-8 col-md-2 ">
-                          <label class="form-label text-color">To</label>
-                          <div class="input-group "><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
-                            <span class="input-group-text "><i class="btn p-0 fa-regular fa-calendar icon-color"></i></span>
-                          </div>                            
-                        </div>
-                        <div class="col-12 col-sm-8 col-md-2">
-                          <label class="form-label text-color">Location</label>
-                          <input type="box" class="form-control" placeholder="Lagoa" />    
-                          <div class="form-check mt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault"><span class="text-color">Return</span></label>
-                          </div>                  
-                        </div>
-                        <div class="col-12 col-sm-8 col-md-2 ">
-                          <label class="form-label text-color">From</label>
-                          <div class="input-group"><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
-                            <span class="input-group-text"><i class="btn p-0 fa-regular fa-dollar icon-color"></i></span>
-                          </div>                            
-                        </div>
-                        <div class="col-12 col-sm-8 col-md-2 ">
-                          <label class="form-label text-color">To</label>
-                          <div class="input-group"><input type="text" class="form-control" placeholder="22-12-2022, 17:30">
-                            <span class="input-group-text"><i class="btn p-0 fa-regular fa-dollar icon-color"></i></span>
-                          </div> 
-                          <button type="submit" class="btn btn-primary w-100 mt-5">
-                            <span class="fw-bold">Apply</span>
-                          </button>                           
-                        </div>
-                      </div>
-                    </div>                    
+            <div class="card">
+              <div class="card-body">
+                <div
+                  class="d-flex flex-row flex-wrap gap-4 justify-content-center justify-content-sm-start"
+                >
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Nome</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Origem</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Destino</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Hora Partida</label>
+                    <input type="datetime-local" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Hora Chegada</label>
+                    <input type="datetime-local" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Lugares</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Estado</label>
+                    <select class="form-select">
+                      <option selected>Disponivel</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </main>
+        <div
+          class="modal fade"
+          id="createRideModal"
+          tabindex="-1"
+          aria-labelledby="createRideModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header m-2">
+                <h5 class="modal-title text-color" id="createRideModal">
+                  CRIAR NOVA BOLEIA
+                </h5>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          >Desde</label
+                        >
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Portimão</option>
+                          <option value="Lagoa">Lagoa</option>
+                          <option value="Albufeira">Albufeira</option>
+                          <option value="Faro">Faro</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          >Até</label
+                        >
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Ferrari</option>
+                          <option value="Lagoa">Porsche</option>
+                          <option value="Albufeira">Lada</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          >Veículo</label
+                        >
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Portimão</option>
+                          <option value="Lagoa">Lagoa</option>
+                          <option value="Albufeira">Albufeira</option>
+                          <option value="Faro">Faro</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <input type="datetime-local" class="form-control" />
+                    </div>
+                    <div class="row mb-5">
+                      <div class="col-6">
+                        <label class="form-label" for="typeNumber"
+                          >Lugares</label
+                        >
+                        <input
+                          type="number"
+                          id="typeNumber"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                  <div class="col">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary w-100"
+                      data-bs-dismiss="modal"
+                    >
+                      <span class="fw-bold">Cancelar</span>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100"
+                      data-bs-dismiss="modal"
+                    >
+                      <span class="fw-bold"> Guardar Alterações</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

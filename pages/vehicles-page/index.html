@@ -114,8 +114,10 @@
                 <li class="sidebar-item">
                   <a class="sidebar-link fw-bold">CRIAR</a>
                 </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link fw-bold">OS MEUS VEÍCULOS</a>
+                <li class="sidebar-item isSelected">
+                  <a href="../vehicles-page/" class="sidebar-link fw-bold"
+                    >OS MEUS VEÍCULOS</a
+                  >
                 </li>
               </ul>
             </li>
@@ -142,6 +144,32 @@
         </nav>
         <main class="content">
           <div class="container-fluid p-0">
+            <h1 class="text-color fw-bold">OS MEUS VEÍCULOS</h1>
+            <hr />
+            <div class="card mb-3">
+              <div class="card-body">
+                <div
+                  class="d-flex flex-row flex-wrap gap-4 justify-content-center justify-content-sm-start"
+                >
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Nome</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Modelo</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">Vezes Usado</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="flex-fill">
+                    <label class="form-label text-color">VIN</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="card shadow">
