@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base Template</title>
+    <title>Editar Perfil</title>
     <link rel="stylesheet" href="../styles/adminkit.css" />
     <link rel="stylesheet" href="../styles/global.css" />
     <script
@@ -32,12 +32,12 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="">
-                <i class="align-middle"></i>
-                <i class="fa-solid fa-user fa-lg me-2 nav-text"></i>
-                <span class="align-middle fw-bold nav-text"> UTILIZADORES</span>
-              </a>
-            </li>
+                <a class="sidebar-link" href="">
+                  <i class="align-middle"></i>
+                  <i class="fa-solid fa-user fa-lg me-2 nav-text"></i>
+                  <span class="align-middle fw-bold nav-text"> UTILIZADORES</span>
+                </a>
+              </li>
             <li class="sidebar-item">
                 <a class="sidebar-link" href="">
                   <i class="align-middle"></i>
@@ -163,117 +163,102 @@
           </div>
         </div>
       </nav>
-      <div class="main">
-        <nav class="navbar navbar-expand navbar-light navbar-bg">
-          <a class="sidebar-toggle js-sidebar-toggle">
-            <i class="hamburger align-self-center"></i>
-          </a>
-        </nav>
-        <main class="content">
-          <div class="container-fluid p-0">
-            <div class="card">
-              <div class="card-body">
-                DELETE CARD AND INSERT YOUR CONTENT HERE
-              </div>
-            </div>
-          </div>
-        </main>
-        <div
-          class="modal fade"
-          id="createRideModal"
-          tabindex="-1"
-          aria-labelledby="createRideModal"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header m-2">
-                <h5 class="modal-title text-color" id="createRideModal">
-                  CRIAR NOVA BOLEIA
-                </h5>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="input-group mb-3">
-                        <label class="input-group-text" for="inputGroupSelect01"
-                          >Desde</label
-                        >
-                        <select class="form-select" id="inputGroupSelect01">
-                          <option selected>Portimão</option>
-                          <option value="Lagoa">Lagoa</option>
-                          <option value="Albufeira">Albufeira</option>
-                          <option value="Faro">Faro</option>
-                        </select>
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+              <a class="sidebar-toggle js-sidebar-toggle">
+                <i class="hamburger align-self-center"></i>
+              </a>
+            </nav>
+            <main class="content">
+              <div class="container-fluid p-0">
+                <h1 class="text-color fw-bold">PERFIL</h1>
+                <hr />
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col">
+                            <h2 class="text-center text-color fw-bold">
+                              EDITAR
+                            </h2>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label class="form-label text-color"
+                              >Primeiro Nome</label
+                            >
+                                <input
+                                type="text"
+                                placeholder="Jhon"
+                                maxlength="50"
+                                class="form-control"
+                              /> 
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label class="form-label text-color"
+                              >Último Nome</label
+                            >
+                                <input
+                                type="text"
+                                placeholder="Jhon"
+                                maxlength="50"
+                                class="form-control"
+                              /> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                              <label class="form-label text-color">Email</label>
+                              <div class="input-group">
+                                <span class="input-group-text"
+                                  ><i class="fa-solid fa-envelope icon-color"></i
+                                ></span>
+                                <input
+                                  type="email"
+                                  maxlength="50"
+                                  placeholder="jhondoe@gmail.com"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label class="form-label text-color">Número de telefone</label>
+                            <div class="input-group">
+                              <span class="input-group-text">
+                                <i class="fa-solid fa-phone icon-color"></i>
+                              </span>
+                              <input
+                                type="number"
+                                placeholder="923123111"
+                                class="form-control"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col">
+                            <button type="submit" class="btn btn-secondary w-100">
+                              <span class="fw-bold">CANCELAR</span>
+                            </button>
+                          </div>
+                          <div class="col">
+                            <button type="submit" class="btn btn-primary w-100">
+                              <span class="fw-bold">GUARDAR ALTERAÇÕES</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="input-group mb-3">
-                        <label class="input-group-text" for="inputGroupSelect01"
-                          >Até</label
-                        >
-                        <select class="form-select" id="inputGroupSelect01">
-                          <option selected>Ferrari</option>
-                          <option value="Lagoa">Porsche</option>
-                          <option value="Albufeira">Lada</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="input-group mb-3">
-                        <label class="input-group-text" for="inputGroupSelect01"
-                          >Veículo</label
-                        >
-                        <select class="form-select" id="inputGroupSelect01">
-                          <option selected>Portimão</option>
-                          <option value="Lagoa">Lagoa</option>
-                          <option value="Albufeira">Albufeira</option>
-                          <option value="Faro">Faro</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <input type="datetime-local" class="form-control" />
-                    </div>
-                    <div class="row mb-5">
-                      <div class="col-6">
-                        <label class="form-label" for="typeNumber"
-                          >Lugares</label
-                        >
-                        <input
-                          type="number"
-                          id="typeNumber"
-                          class="form-control"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-between align-items-center">
-                  <div class="col">
-                    <button
-                      type="submit"
-                      class="btn btn-secondary w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      <span class="fw-bold">Cancelar</span>
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button
-                      type="submit"
-                      class="btn btn-primary w-100"
-                      data-bs-dismiss="modal"
-                    >
-                      <span class="fw-bold"> Guardar Alterações</span>
-                    </button>
                   </div>
                 </div>
               </div>
-            </div>
+            </main>
           </div>
         </div>
         <div
