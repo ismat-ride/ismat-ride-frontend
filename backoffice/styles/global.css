@@ -1,3 +1,7 @@
+.nav-text {
+  color: #ffffff !important;
+}
+
 .logo-font {
   font-size: 64px;
   font-weight: 700;
@@ -16,7 +20,7 @@
 }
 
 .secondary-bg {
-  background-color: #7ac7cd;
+  background-color: #6c757d;
 }
 
 .icon-color {
@@ -24,7 +28,7 @@
 }
 
 .text-color {
-  color: #8391a2 !important;
+  color: #8391A2 !important;
 }
 
 .btn-primary {
@@ -76,7 +80,7 @@
 .navigation-item {
   text-decoration: none !important;
   padding: 0%;
-  color: #fafbfe !important;
+  color: #8391A2 !important;
 }
 
 .font-36px {
@@ -100,7 +104,7 @@
 }
 
 .sidebar-link {
-  color: #fafbfe !important;
+  color: #8391A2 !important;
   background-color: transparent !important;
 }
 
