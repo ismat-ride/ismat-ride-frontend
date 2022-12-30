@@ -17,6 +17,7 @@ $nav-bg-color: #313a46;
 $primary-color: #0D6EFD;
 $primary-hover-color: #366065;
 $secondary-color: #7ac7cd;
+$secondary-text-color: #8391A2;
 $text-color: #fafbfe;
 
 $dashboard-bg-color: #fafbfe;
@@ -37,6 +38,10 @@ $font-family: Roboto;
 
 .secondary-color {
   color: white !important;
+}
+
+.secondary-text-color{
+  color: $secondary-text-color !important;
 }
 
 .primary-bg {
