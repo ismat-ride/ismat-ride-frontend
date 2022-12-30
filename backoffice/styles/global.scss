@@ -16,15 +16,22 @@ $fh-bold: 700;
 $nav-bg-color: #313a46;
 $primary-color: #0D6EFD;
 $primary-hover-color: #366065;
-$secondary-color: #7ac7cd;
-$text-color: #fafbfe;
+$secondary-color: #6c757d;
+$text-color: #8391A2;
 
 $dashboard-bg-color: #fafbfe;
 $dashboard-font-color: #8391a2;
 $card-bg-color: #ffffff;
 $icon-bg-color: #6c757d;
 
+$nav-text-color: $card-bg-color;
+
 $font-family: Roboto;
+
+.nav-text {
+  color: $nav-text-color !important;
+}
+
 
 .logo-font {
   font-size: $font-64px;
