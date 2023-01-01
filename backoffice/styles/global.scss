@@ -14,10 +14,10 @@ $fh-semi-bold: 600;
 $fh-bold: 700;
 
 $nav-bg-color: #313a46;
-$primary-color: #0D6EFD;
+$primary-color: #0d6efd;
 $primary-hover-color: #366065;
 $secondary-color: #7ac7cd;
-$secondary-text-color: #8391A2;
+$secondary-text-color: #8391a2;
 $text-color: #fafbfe;
 
 $dashboard-bg-color: #fafbfe;
@@ -40,7 +40,7 @@ $font-family: Roboto;
   color: white !important;
 }
 
-.secondary-text-color{
+.secondary-text-color {
   color: $secondary-text-color !important;
 }
 
@@ -60,29 +60,9 @@ $font-family: Roboto;
   color: $text-color !important;
 }
 
-.btn-primary {
-  background-color: $primary-color !important;
-  border: none !important;
-}
-
-.btn-primary:hover {
-  background-color: $primary-hover-color !important;
-  border: none !important;
-}
-
-.btn-secondary {
-  background-color: $secondary-color !important;
-  border: none !important;
-}
-
 .page-item.active .page-link {
   background-color: $primary-color !important;
   color: white !important;
-}
-
-.btn-secondary:hover {
-  background-color: $primary-hover-color !important;
-  border: none !important;
 }
 
 .padding-top-10 {
@@ -97,8 +77,8 @@ $font-family: Roboto;
   background-color: $dashboard-bg-color !important;
 }
 
-.sidebar-content{
-  background-color: #313A46 !important;
+.sidebar-content {
+  background-color: #313a46 !important;
 }
 
 .body {
@@ -252,7 +232,7 @@ a {
   border-bottom-right-radius: 0.2rem;
 }
 
-.button-wrapper{
+.button-wrapper {
   border-top-width: 1px !important;
   border-bottom-width: 1px !important;
   border-style: solid;
